@@ -1,0 +1,1844 @@
+MemoryInfo:initial-memory size= 21860352 ; resident= 1417216 ; share= 1212416 ; text= 319488 ; lib= 0 ; data= 393216 ; dt= 0 ; 
+TESTING: REX=/\x00/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 21864448 ; resident= 1785856 ; share= 1515520 ; text= 319488 ; lib= 0 ; data= 397312 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 0
+Timer: 1.16755e-05 of 1.16755e-05 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 26399 : 1.16755e-05 s?
+Timer: 2.26089e-06 of 2.26089e-06 s? unrank::test_unrank_rank(1,1) # @done@ 5112 : 2.26089e-06 s?
+Timer: 5.07286e-07 of 5.07286e-07 s? rank::test_unrank_rank(1,1) # @done@ 1147 : 5.07286e-07 s?
+Timer: 4.14302e-05 s? ranker::test_unrank_rank.400.100 # @done@ 93676 : 4.14302e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 1
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 21864448 ; resident= 1855488 ; share= 1581056 ; text= 319488 ; lib= 0 ; data= 397312 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 21999616 ; resident= 1978368 ; share= 1605632 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 0
+Timer: 9.19615e-06 of 9.19615e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 20793 : 9.19615e-06 s?
+Timer: 4.98042e-06 of 4.98042e-06 s? unrank::test_unrank_rank(1,1) # @done@ 11261 : 4.98042e-06 s?
+Timer: 2.27505e-06 of 2.27505e-06 s? rank::test_unrank_rank(1,1) # @done@ 5144 : 2.27505e-06 s?
+Timer: 3.8023e-05 s? ranker::test_unrank_rank.400.100 # @done@ 85972 : 3.8023e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 1
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 21999616 ; resident= 1982464 ; share= 1609728 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 21999616 ; resident= 2027520 ; share= 1613824 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 2 : num_eps_closed_states= 2 : tab_entries= 802
+
+nfa_num_matches= 0
+Timer: 8.64331e-06 of 8.64331e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19543 : 8.64331e-06 s?
+Timer: 2.97339e-06 of 2.97339e-06 s? unrank::test_unrank_rank(1,1) # @done@ 6723 : 2.97339e-06 s?
+Timer: 7.25325e-06 of 7.25325e-06 s? rank::test_unrank_rank(1,1) # @done@ 16400 : 7.25325e-06 s?
+Timer: 3.94462e-05 s? ranker::test_unrank_rank.400.100 # @done@ 89190 : 3.94462e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 1
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 2 : num_eps_closed_states= 2 : tab_entries= 802
+
+
+TESTING: REX=/1/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 0
+Timer: 8.80253e-06 of 8.80253e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19903 : 8.80253e-06 s?
+Timer: 1.48559e-06 of 1.48559e-06 s? unrank::test_unrank_rank(1,1) # @done@ 3359 : 1.48559e-06 s?
+Timer: 8.9162e-07 of 8.9162e-07 s? rank::test_unrank_rank(1,1) # @done@ 2016 : 8.9162e-07 s?
+Timer: 3.09453e-05 s? ranker::test_unrank_rank.400.100 # @done@ 69969 : 3.09453e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 1
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 0
+Timer: 8.63801e-06 of 8.63801e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19531 : 8.63801e-06 s?
+Timer: 9.96438e-07 of 9.96438e-07 s? unrank::test_unrank_rank(1,1) # @done@ 2253 : 9.96438e-07 s?
+Timer: 2.60056e-07 of 2.60056e-07 s? rank::test_unrank_rank(1,1) # @done@ 588 : 2.60056e-07 s?
+Timer: 2.99688e-05 s? ranker::test_unrank_rank.400.100 # @done@ 67761 : 2.99688e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 1
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 2 : num_eps_closed_states= 2 : tab_entries= 802
+
+nfa_num_matches= 0
+Timer: 8.5699e-06 of 8.5699e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19377 : 8.5699e-06 s?
+Timer: 1.31134e-06 of 1.31134e-06 s? unrank::test_unrank_rank(1,1) # @done@ 2965 : 1.31134e-06 s?
+Timer: 3.51606e-06 of 3.51606e-06 s? rank::test_unrank_rank(1,1) # @done@ 7950 : 3.51606e-06 s?
+Timer: 3.31027e-05 s? ranker::test_unrank_rank.400.100 # @done@ 74847 : 3.31027e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 1
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 2 : num_eps_closed_states= 2 : tab_entries= 802
+
+
+TESTING: REX=/12/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+dfa_num_matches= 0
+Timer: 8.85074e-06 of 8.85074e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 20012 : 8.85074e-06 s?
+Timer: 2.65053e-06 of 2.65053e-06 s? unrank::test_unrank_rank(2,1) # @done@ 5993 : 2.65053e-06 s?
+Timer: 1.41881e-06 of 1.41881e-06 s? rank::test_unrank_rank(2,1) # @done@ 3208 : 1.41881e-06 s?
+Timer: 3.25835e-05 s? ranker::test_unrank_rank.400.100 # @done@ 73673 : 3.25835e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 2
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 21999616 ; resident= 2031616 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 21999616 ; resident= 2048000 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+ffa_num_matches= 0
+Timer: 8.64022e-06 of 8.64022e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 19536 : 8.64022e-06 s?
+Timer: 1.24898e-06 of 1.24898e-06 s? unrank::test_unrank_rank(2,1) # @done@ 2824 : 1.24898e-06 s?
+Timer: 3.5824e-07 of 3.5824e-07 s? rank::test_unrank_rank(2,1) # @done@ 810 : 3.5824e-07 s?
+Timer: 3.00245e-05 s? ranker::test_unrank_rank.400.100 # @done@ 67887 : 3.00245e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 2
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 21999616 ; resident= 2048000 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 532480 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22134784 ; resident= 2105344 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 667648 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 3 : tab_entries= 1203
+
+nfa_num_matches= 0
+Timer: 9.15325e-06 of 9.15325e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 20696 : 9.15325e-06 s?
+Timer: 1.73503e-06 of 1.73503e-06 s? unrank::test_unrank_rank(2,1) # @done@ 3923 : 1.73503e-06 s?
+Timer: 9.30186e-06 of 9.30186e-06 s? rank::test_unrank_rank(2,1) # @done@ 21032 : 9.30186e-06 s?
+Timer: 4.17018e-05 s? ranker::test_unrank_rank.400.100 # @done@ 94290 : 4.17018e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 2
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22134784 ; resident= 2109440 ; share= 1617920 ; text= 319488 ; lib= 0 ; data= 667648 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 3 : tab_entries= 1203
+
+
+TESTING: REX=/1|2/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22102016 ; resident= 2113536 ; share= 1622016 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 0
+Timer: 8.76096e-06 of 8.76096e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19809 : 8.76096e-06 s?
+Timer: 2.43072e-06 of 2.43072e-06 s? unrank::test_unrank_rank(1,1) # @done@ 5496 : 2.43072e-06 s?
+Timer: 8.65526e-07 of 8.65526e-07 s? rank::test_unrank_rank(1,1) # @done@ 1957 : 8.65526e-07 s?
+Timer: 3.78262e-05 s? ranker::test_unrank_rank.400.100 # @done@ 85527 : 3.78262e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 1
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rdt size= 22102016 ; resident= 2121728 ; share= 1630208 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22102016 ; resident= 2121728 ; share= 1630208 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 0
+Timer: 8.75565e-06 of 8.75565e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19797 : 8.75565e-06 s?
+Timer: 4.53461e-06 of 4.53461e-06 s? unrank::test_unrank_rank(1,1) # @done@ 10253 : 4.53461e-06 s?
+Timer: 4.23696e-07 of 4.23696e-07 s? rank::test_unrank_rank(1,1) # @done@ 958 : 4.23696e-07 s?
+Timer: 3.49218e-05 s? ranker::test_unrank_rank.400.100 # @done@ 78960 : 3.49218e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 1
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rft size= 22102016 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22102016 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 3 : tab_entries= 1203
+
+nfa_num_matches= 0
+Timer: 9.0931e-06 of 9.0931e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 20560 : 9.0931e-06 s?
+Timer: 1.79385e-06 of 1.79385e-06 s? unrank::test_unrank_rank(1,1) # @done@ 4056 : 1.79385e-06 s?
+Timer: 5.68275e-06 of 5.68275e-06 s? rank::test_unrank_rank(1,1) # @done@ 12849 : 5.68275e-06 s?
+Timer: 4.29503e-05 s? ranker::test_unrank_rank.400.100 # @done@ 97113 : 4.29503e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 1
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rnf size= 22102016 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 634880 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 3 : tab_entries= 1203
+
+
+TESTING: REX=/1|2|3|4|5/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22085632 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 0
+Timer: 9.32309e-06 of 9.32309e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 21080 : 9.32309e-06 s?
+Timer: 1.06676e-06 of 5.41694e-06 s? unrank::test_unrank_rank(1,4) # @done@ 12248 : 5.41694e-06 s?
+Timer: 6.83752e-07 of 6.16394e-06 s? rank::test_unrank_rank(1,4) # @done@ 13937 : 6.16394e-06 s?
+Timer: 4.32979e-05 s? ranker::test_unrank_rank.400.100 # @done@ 97899 : 4.32979e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 1
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rdt size= 22085632 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22085632 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 0
+Timer: 8.77246e-06 of 8.77246e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19835 : 8.77246e-06 s?
+Timer: 3.6222e-07 of 2.40242e-06 s? unrank::test_unrank_rank(1,4) # @done@ 5432 : 2.40242e-06 s?
+Timer: 1.66294e-07 of 8.80563e-07 s? rank::test_unrank_rank(1,4) # @done@ 1991 : 8.80563e-07 s?
+Timer: 3.35799e-05 s? ranker::test_unrank_rank.400.100 # @done@ 75926 : 3.35799e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 1
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rft size= 22085632 ; resident= 2125824 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22085632 ; resident= 2129920 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 18 : num_eps_closed_states= 6 : tab_entries= 2406
+
+nfa_num_matches= 0
+Timer: 8.56459e-06 of 8.56459e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19365 : 8.56459e-06 s?
+Timer: 5.72742e-07 of 4.54124e-06 s? unrank::test_unrank_rank(1,4) # @done@ 10268 : 4.54124e-06 s?
+Timer: 8.15018e-06 of 3.31345e-05 s? rank::test_unrank_rank(1,4) # @done@ 74919 : 3.31345e-05 s?
+Timer: 7.05335e-05 s? ranker::test_unrank_rank.400.100 # @done@ 159480 : 7.05335e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 1
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rnf size= 22085632 ; resident= 2134016 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 18 : num_eps_closed_states= 6 : tab_entries= 2406
+
+
+TESTING: REX=/(1|2)9/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22085632 ; resident= 2134016 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+dfa_num_matches= 0
+Timer: 8.79369e-06 of 8.79369e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 19883 : 8.79369e-06 s?
+Timer: 3.00126e-06 of 3.00126e-06 s? unrank::test_unrank_rank(2,1) # @done@ 6786 : 3.00126e-06 s?
+Timer: 1.55458e-06 of 1.55458e-06 s? rank::test_unrank_rank(2,1) # @done@ 3515 : 1.55458e-06 s?
+Timer: 3.36754e-05 s? ranker::test_unrank_rank.400.100 # @done@ 76142 : 3.36754e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 2
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rdt size= 22085632 ; resident= 2134016 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22085632 ; resident= 2134016 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+ffa_num_matches= 0
+Timer: 9.07055e-06 of 9.07055e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 20509 : 9.07055e-06 s?
+Timer: 1.7023e-06 of 1.7023e-06 s? unrank::test_unrank_rank(2,1) # @done@ 3849 : 1.7023e-06 s?
+Timer: 4.56424e-07 of 4.56424e-07 s? rank::test_unrank_rank(2,1) # @done@ 1032 : 4.56424e-07 s?
+Timer: 3.28086e-05 s? ranker::test_unrank_rank.400.100 # @done@ 74182 : 3.28086e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 2
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rft size= 22085632 ; resident= 2134016 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 2
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22085632 ; resident= 2142208 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 10 : num_eps_closed_states= 4 : tab_entries= 1604
+
+nfa_num_matches= 0
+Timer: 1.10245e-05 of 1.10245e-05 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.2 24927 : 1.10245e-05 s?
+Timer: 2.19278e-06 of 2.19278e-06 s? unrank::test_unrank_rank(2,1) # @done@ 4958 : 2.19278e-06 s?
+Timer: 9.33989e-06 of 9.33989e-06 s? rank::test_unrank_rank(2,1) # @done@ 21118 : 9.33989e-06 s?
+Timer: 4.31113e-05 s? ranker::test_unrank_rank.400.100 # @done@ 97477 : 4.31113e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 2
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rnf size= 22085632 ; resident= 2146304 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 10 : num_eps_closed_states= 4 : tab_entries= 1604
+
+
+TESTING: REX=/x(1|2)9/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22085632 ; resident= 2146304 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.78705e-06 of 8.78705e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19868 : 8.78705e-06 s?
+Timer: 5.43684e-06 of 5.43684e-06 s? unrank::test_unrank_rank(3,1) # @done@ 12293 : 5.43684e-06 s?
+Timer: 2.96278e-06 of 2.96278e-06 s? rank::test_unrank_rank(3,1) # @done@ 6699 : 2.96278e-06 s?
+Timer: 3.73985e-05 s? ranker::test_unrank_rank.400.100 # @done@ 84560 : 3.73985e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rdt size= 22085632 ; resident= 2146304 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22085632 ; resident= 2146304 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 8.64553e-06 of 8.64553e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19548 : 8.64553e-06 s?
+Timer: 2.10787e-06 of 2.10787e-06 s? unrank::test_unrank_rank(3,1) # @done@ 4766 : 2.10787e-06 s?
+Timer: 5.08612e-07 of 5.08612e-07 s? rank::test_unrank_rank(3,1) # @done@ 1150 : 5.08612e-07 s?
+Timer: 3.18082e-05 s? ranker::test_unrank_rank.400.100 # @done@ 71920 : 3.18082e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rft size= 22085632 ; resident= 2146304 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22224896 ; resident= 2220032 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 14 : num_eps_closed_states= 5 : tab_entries= 2005
+
+nfa_num_matches= 0
+Timer: 9.15679e-06 of 9.15679e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 20704 : 9.15679e-06 s?
+Timer: 2.90794e-06 of 2.90794e-06 s? unrank::test_unrank_rank(3,1) # @done@ 6575 : 2.90794e-06 s?
+Timer: 1.29188e-05 of 1.29188e-05 s? rank::test_unrank_rank(3,1) # @done@ 29210 : 1.29188e-05 s?
+Timer: 4.64124e-05 s? ranker::test_unrank_rank.400.100 # @done@ 104941 : 4.64124e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 2
+MemoryInfo:RANKER:SIZE:used-rnf size= 22224896 ; resident= 2220032 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 14 : num_eps_closed_states= 5 : tab_entries= 2005
+
+
+TESTING: REX=/(x|y)(1|2)9/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22224896 ; resident= 2220032 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 9.634e-06 of 9.634e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 21783 : 9.634e-06 s?
+Timer: 4.56999e-06 of 1.47458e-05 s? unrank::test_unrank_rank(3,3) # @done@ 33341 : 1.47458e-05 s?
+Timer: 2.74076e-06 of 8.64199e-06 s? rank::test_unrank_rank(3,3) # @done@ 19540 : 8.64199e-06 s?
+Timer: 5.52817e-05 s? ranker::test_unrank_rank.400.100 # @done@ 124995 : 5.52817e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rdt size= 22085632 ; resident= 2179072 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22085632 ; resident= 2179072 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 8.63137e-06 of 8.63137e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19516 : 8.63137e-06 s?
+Timer: 1.08533e-06 of 4.12507e-06 s? unrank::test_unrank_rank(3,3) # @done@ 9327 : 4.12507e-06 s?
+Timer: 3.29492e-07 of 1.31532e-06 s? rank::test_unrank_rank(3,3) # @done@ 2974 : 1.31532e-06 s?
+Timer: 3.52044e-05 s? ranker::test_unrank_rank.400.100 # @done@ 79599 : 3.52044e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rft size= 22085632 ; resident= 2179072 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 618496 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 18 : num_eps_closed_states= 6 : tab_entries= 2406
+
+nfa_num_matches= 0
+Timer: 9.19748e-06 of 9.19748e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 20796 : 9.19748e-06 s?
+Timer: 1.40731e-06 of 5.82029e-06 s? unrank::test_unrank_rank(3,3) # @done@ 13160 : 5.82029e-06 s?
+Timer: 1.10908e-05 of 3.79084e-05 s? rank::test_unrank_rank(3,3) # @done@ 85713 : 3.79084e-05 s?
+Timer: 7.6291e-05 s? ranker::test_unrank_rank.400.100 # @done@ 172498 : 7.6291e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 3
+MemoryInfo:RANKER:SIZE:used-rnf size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 18 : num_eps_closed_states= 6 : tab_entries= 2406
+
+
+TESTING: REX=/(x|y|z)(1|2|3|4)9/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.78307e-06 of 8.78307e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19859 : 8.78307e-06 s?
+Timer: 4.47712e-06 of 5.14977e-05 s? unrank::test_unrank_rank(3,11) # @done@ 116439 : 5.14977e-05 s?
+Timer: 2.76154e-06 of 3.11443e-05 s? rank::test_unrank_rank(3,11) # @done@ 70419 : 3.11443e-05 s?
+Timer: 0.000114929 s? ranker::test_unrank_rank.400.100 # @done@ 259861 : 0.000114929 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rdt size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 9.29434e-06 of 9.29434e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 21015 : 9.29434e-06 s?
+Timer: 9.84497e-07 of 1.18754e-05 s? unrank::test_unrank_rank(3,11) # @done@ 26851 : 1.18754e-05 s?
+Timer: 2.95437e-07 of 3.99327e-06 s? rank::test_unrank_rank(3,11) # @done@ 9029 : 3.99327e-06 s?
+Timer: 4.90842e-05 s? ranker::test_unrank_rank.400.100 # @done@ 110982 : 4.90842e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rft size= 22224896 ; resident= 2240512 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22224896 ; resident= 2301952 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 30 : num_eps_closed_states= 9 : tab_entries= 3609
+
+nfa_num_matches= 0
+Timer: 8.59201e-06 of 8.59201e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19427 : 8.59201e-06 s?
+Timer: 1.37945e-06 of 1.90234e-05 s? unrank::test_unrank_rank(3,11) # @done@ 43013 : 1.90234e-05 s?
+Timer: 1.73008e-05 of 0.000190923 s? rank::test_unrank_rank(3,11) # @done@ 431687 : 0.000190923 s?
+Timer: 0.000243232 s? ranker::test_unrank_rank.400.100 # @done@ 549960 : 0.000243232 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rnf size= 22224896 ; resident= 2301952 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 30 : num_eps_closed_states= 9 : tab_entries= 3609
+
+
+TESTING: REX=/(x|y|z)(1|2|3|4|)9/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22224896 ; resident= 2306048 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.81978e-06 of 8.81978e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19942 : 8.81978e-06 s?
+Timer: 4.49171e-06 of 5.15751e-05 s? unrank::test_unrank_rank(3,11) # @done@ 116614 : 5.15751e-05 s?
+Timer: 2.76154e-06 of 3.1135e-05 s? rank::test_unrank_rank(3,11) # @done@ 70398 : 3.1135e-05 s?
+Timer: 0.000119644 s? ranker::test_unrank_rank.400.100 # @done@ 270522 : 0.000119644 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rdt size= 22224896 ; resident= 2306048 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22224896 ; resident= 2306048 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 757760 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 9.06436e-06 of 9.06436e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 20495 : 9.06436e-06 s?
+Timer: 1.06941e-06 of 1.33491e-05 s? unrank::test_unrank_rank(3,11) # @done@ 30183 : 1.33491e-05 s?
+Timer: 3.40107e-07 of 4.73496e-06 s? rank::test_unrank_rank(3,11) # @done@ 10706 : 4.73496e-06 s?
+Timer: 5.13765e-05 s? ranker::test_unrank_rank.400.100 # @done@ 116165 : 5.13765e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rft size= 22155264 ; resident= 2252800 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 688128 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22290432 ; resident= 2306048 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 823296 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 34 : num_eps_closed_states= 9 : tab_entries= 3609
+
+nfa_num_matches= 0
+Timer: 8.86799e-06 of 8.86799e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 20051 : 8.86799e-06 s?
+Timer: 1.3821e-06 of 2.33687e-05 s? unrank::test_unrank_rank(3,11) # @done@ 52838 : 2.33687e-05 s?
+Timer: 2.39207e-05 of 0.000267211 s? rank::test_unrank_rank(3,11) # @done@ 604178 : 0.000267211 s?
+Timer: 0.000325477 s? ranker::test_unrank_rank.400.100 # @done@ 735920 : 0.000325477 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 4
+MemoryInfo:RANKER:SIZE:used-rnf size= 22290432 ; resident= 2310144 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 823296 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 34 : num_eps_closed_states= 9 : tab_entries= 3609
+
+
+TESTING: REX=/(1|2|3)(a|b|c|d||(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22290432 ; resident= 2310144 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 823296 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.21531e-06 of 3.21531e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7270 : 3.21531e-06 s?
+Timer: 0.000478808 of 0.0615948 s? unrank::test_unrank_rank(400,100) # @done@ 139269089 : 0.0615948 s?
+Timer: 0.000312832 of 0.0413372 s? rank::test_unrank_rank(400,100) # @done@ 93465643 : 0.0413372 s?
+Timer: 0.103008 s? ranker::test_unrank_rank.400.100 # @done@ 232906788 : 0.103008 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22290432 ; resident= 2310144 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 823296 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22302720 ; resident= 2277376 ; share= 1634304 ; text= 319488 ; lib= 0 ; data= 835584 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.15915e-06 of 3.15915e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7143 : 3.15915e-06 s?
+Timer: 0.000208308 of 0.0217318 s? unrank::test_unrank_rank(400,100) # @done@ 49136682 : 0.0217318 s?
+Timer: 7.69464e-05 of 0.00827432 s? rank::test_unrank_rank(400,100) # @done@ 18708681 : 0.00827432 s?
+Timer: 0.0300839 s? ranker::test_unrank_rank.400.100 # @done@ 68021337 : 0.0300839 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22302720 ; resident= 2285568 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 835584 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22843392 ; resident= 2854912 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 1376256 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+nfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.12774e-06 of 3.12774e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7072 : 3.12774e-06 s?
+Timer: 0.000251238 of 0.0366917 s? unrank::test_unrank_rank(400,100) # @done@ 82961845 : 0.0366917 s?
+Timer: 0.00943806 of 1.03728 s? rank::test_unrank_rank(400,100) # @done@ 2345350991 : 1.03728 s?
+Timer: 1.07489 s? ranker::test_unrank_rank.400.100 # @done@ 2430395616 : 1.07489 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rnf size= 22880256 ; resident= 2985984 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 1413120 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+
+TESTING: REX=/(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22167552 ; resident= 2273280 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 700416 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.14853e-06 of 3.14853e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7119 : 3.14853e-06 s?
+Timer: 0.000509353 of 0.0621206 s? unrank::test_unrank_rank(400,100) # @done@ 140458143 : 0.0621206 s?
+Timer: 0.000317989 of 0.0410819 s? rank::test_unrank_rank(400,100) # @done@ 92888343 : 0.0410819 s?
+Timer: 0.10328 s? ranker::test_unrank_rank.400.100 # @done@ 233521152 : 0.10328 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22167552 ; resident= 2273280 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 700416 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22302720 ; resident= 2306048 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 835584 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.36701e-06 of 3.36701e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7613 : 3.36701e-06 s?
+Timer: 0.000207834 of 0.0219158 s? unrank::test_unrank_rank(400,100) # @done@ 49552726 : 0.0219158 s?
+Timer: 7.62715e-05 of 0.00821375 s? rank::test_unrank_rank(400,100) # @done@ 18571732 : 0.00821375 s?
+Timer: 0.0302183 s? ranker::test_unrank_rank.400.100 # @done@ 68325191 : 0.0302183 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22302720 ; resident= 2306048 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 835584 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1231
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1231
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22978560 ; resident= 3043328 ; share= 1642496 ; text= 319488 ; lib= 0 ; data= 1511424 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+nfa_num_matches= 34681812598778787255608699093476146089211713624036610182402218716812503870910302200312795155795868963692099440610859309399588755565205933891728838613312670371640317815246052899202451500458424752076478780428979569878744176140530937203724807952445817282364122639869680225438662468221057027921554893568541052522804002164150753628084027510686552108850575469184413899216125952
+nfa_ambig= 4.29156e+09
+Timer: 2.96322e-06 of 2.96322e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6700 : 2.96322e-06 s?
+Timer: 0.000492893 of 0.0484483 s? unrank::test_unrank_rank(400,100) # @done@ 109544142 : 0.0484483 s?
+Timer: 0.0124173 of 1.24119 s? rank::test_unrank_rank(400,100) # @done@ 2806388921 : 1.24119 s?
+Timer: 1.29034 s? ranker::test_unrank_rank.400.100 # @done@ 2917532677 : 1.29034 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1231
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1231
+MemoryInfo:RANKER:SIZE:used-rnf size= 23068672 ; resident= 3182592 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1601536 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+
+TESTING: REX=/123(a|b|c|d||(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+dfa_num_matches= 930310163567997250655980464336001304983259418575343765212980482210166735937825302400767170540920154703737349008731513753219285418241571434766905973300821806478933664918298181549949091480412747163672270338789746412618705003672689299495943574153600255620844991773280119165648581540774936661740542730730250115341728391163597633594244849
+Timer: 3.1932e-06 of 3.1932e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7220 : 3.1932e-06 s?
+Timer: 0.000551094 of 0.0614019 s? unrank::test_unrank_rank(400,100) # @done@ 138833092 : 0.0614019 s?
+Timer: 0.000363569 of 0.0410174 s? rank::test_unrank_rank(400,100) # @done@ 92742455 : 0.0410174 s?
+Timer: 0.102495 s? ranker::test_unrank_rank.400.100 # @done@ 231746019 : 0.102495 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+ffa_num_matches= 930310163567997250655980464336001304983259418575343765212980482210166735937825302400767170540920154703737349008731513753219285418241571434766905973300821806478933664918298181549949091480412747163672270338789746412618705003672689299495943574153600255620844991773280119165648581540774936661740542730730250115341728391163597633594244849
+Timer: 3.08706e-06 of 3.08706e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6980 : 3.08706e-06 s?
+Timer: 0.000181855 of 0.0213128 s? unrank::test_unrank_rank(400,100) # @done@ 48189411 : 0.0213128 s?
+Timer: 6.95295e-05 of 0.00816043 s? rank::test_unrank_rank(400,100) # @done@ 18451179 : 0.00816043 s?
+Timer: 0.0295466 s? ranker::test_unrank_rank.400.100 # @done@ 66806520 : 0.0295466 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23027712 ; resident= 3072000 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1560576 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+nfa_num_matches= 930310163567997250655980464336001304983259418575343765212980482210166735937825302400767170540920154703737349008731513753219285418241571434766905973300821806478933664918298181549949091480412747163672270338789746412618705003672689299495943574153600255620844991773280119165648581540774936661740542730730250115341728391163597633594244849
+Timer: 3.1472e-06 of 3.1472e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7116 : 3.1472e-06 s?
+Timer: 0.000254029 of 0.0368446 s? unrank::test_unrank_rank(400,100) # @done@ 83307555 : 0.0368446 s?
+Timer: 0.00858719 of 0.940041 s? rank::test_unrank_rank(400,100) # @done@ 2125482911 : 0.940041 s?
+Timer: 0.977705 s? ranker::test_unrank_rank.400.100 # @done@ 2210643970 : 0.977705 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:used-rnf size= 23089152 ; resident= 3203072 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1622016 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+
+TESTING: REX=/123(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+dfa_num_matches= 930310163567997250655980464336001304983259418575343765212980482210166735937825302400767170540920154703737349008731513753219285418241571434766905973300821806478933664918298181549949091480412747163672270338789746412618705003672689299495943574153600255620844991773280119165648581540774936661740542730730250115341728391163597633594244849
+Timer: 3.30023e-06 of 3.30023e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7462 : 3.30023e-06 s?
+Timer: 0.000552953 of 0.0613621 s? unrank::test_unrank_rank(400,100) # @done@ 138743048 : 0.0613621 s?
+Timer: 0.000361974 of 0.0410429 s? rank::test_unrank_rank(400,100) # @done@ 92800182 : 0.0410429 s?
+Timer: 0.10248 s? ranker::test_unrank_rank.400.100 # @done@ 231712699 : 0.10248 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+ffa_num_matches= 930310163567997250655980464336001304983259418575343765212980482210166735937825302400767170540920154703737349008731513753219285418241571434766905973300821806478933664918298181549949091480412747163672270338789746412618705003672689299495943574153600255620844991773280119165648581540774936661740542730730250115341728391163597633594244849
+Timer: 3.14101e-06 of 3.14101e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7102 : 3.14101e-06 s?
+Timer: 0.000178868 of 0.0212836 s? unrank::test_unrank_rank(400,100) # @done@ 48123455 : 0.0212836 s?
+Timer: 7.14636e-05 of 0.00819459 s? rank::test_unrank_rank(400,100) # @done@ 18528409 : 0.00819459 s?
+Timer: 0.0295526 s? ranker::test_unrank_rank.400.100 # @done@ 66819946 : 0.0295526 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1107
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1107
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 8 : tab_entries= 3208
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1224
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1224
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23162880 ; resident= 3260416 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1695744 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+nfa_num_matches= 156107273713645417293951130076555091255081699894413195445037277050766328380256259571841921936319937038724011873519158093750948842083874775321931277536788172600290721626232466783611383985000846136494879552212820754620876756184092515674839345127774958559419458491004232463301632458620739365653342556113397043006294321213817305814777800306392550556678339096521674586062848
+nfa_ambig= 1.04047e+10
+Timer: 2.99949e-06 of 2.99949e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6782 : 2.99949e-06 s?
+Timer: 0.000485934 of 0.0492268 s? unrank::test_unrank_rank(400,100) # @done@ 111304503 : 0.0492268 s?
+Timer: 0.0112885 of 1.12366 s? rank::test_unrank_rank(400,100) # @done@ 2540652329 : 1.12366 s?
+Timer: 1.1739 s? ranker::test_unrank_rank.400.100 # @done@ 2654256861 : 1.1739 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1224
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1224
+MemoryInfo:RANKER:SIZE:used-rnf size= 23277568 ; resident= 3391488 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1810432 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+
+TESTING: REX=/123(a|b|c|d|)|(1|2|3)*789/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+dfa_num_matches= 2612992262464937989350528576886473933944738874547678361587823081824521687095664228021455501090634598450183419808346515254330733076734243210894262387205009519554084641620752340460862345706963
+Timer: 3.03885e-06 of 3.03885e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6871 : 3.03885e-06 s?
+Timer: 0.000375792 of 0.0385965 s? unrank::test_unrank_rank(400,100) # @done@ 87268854 : 0.0385965 s?
+Timer: 0.000243835 of 0.024948 s? rank::test_unrank_rank(400,100) # @done@ 56408853 : 0.024948 s?
+Timer: 0.0636094 s? ranker::test_unrank_rank.400.100 # @done@ 143824352 : 0.0636094 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+ffa_num_matches= 2612992262464937989350528576886473933944738874547678361587823081824521687095664228021455501090634598450183419808346515254330733076734243210894262387205009519554084641620752340460862345706963
+Timer: 3.02602e-06 of 3.02602e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6842 : 3.02602e-06 s?
+Timer: 0.00018044 of 0.0185285 s? unrank::test_unrank_rank(400,100) # @done@ 41893829 : 0.0185285 s?
+Timer: 6.94888e-05 of 0.007195 s? rank::test_unrank_rank(400,100) # @done@ 16268290 : 0.007195 s?
+Timer: 0.0257855 s? ranker::test_unrank_rank.400.100 # @done@ 58302305 : 0.0257855 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22761472 ; resident= 2867200 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1294336 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 60 : num_eps_closed_states= 14 : tab_entries= 5614
+
+nfa_num_matches= 2612992262464937989350528576886473933944738874547678361587823081824521687095664228021455501090634598450183419808346515254330733076734243210894262387205009519554084641620752340460862345706963
+Timer: 2.99595e-06 of 2.99595e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6774 : 2.99595e-06 s?
+Timer: 0.000191727 of 0.0205375 s? unrank::test_unrank_rank(400,100) # @done@ 46436420 : 0.0205375 s?
+Timer: 0.00315987 of 0.317852 s? rank::test_unrank_rank(400,100) # @done@ 718681140 : 0.317852 s?
+Timer: 0.338495 s? ranker::test_unrank_rank.400.100 # @done@ 765355514 : 0.338495 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 630
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 630
+MemoryInfo:RANKER:SIZE:used-rnf size= 22884352 ; resident= 2985984 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1417216 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 60 : num_eps_closed_states= 14 : tab_entries= 5614
+
+
+TESTING: REX=/987(a|b|c|d||(1|2|3)*)*(1|2|3)/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.21664e-06 of 3.21664e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7273 : 3.21664e-06 s?
+Timer: 0.000553039 of 0.063228 s? unrank::test_unrank_rank(400,100) # @done@ 142962017 : 0.063228 s?
+Timer: 0.00036193 of 0.0423278 s? rank::test_unrank_rank(400,100) # @done@ 95705506 : 0.0423278 s?
+Timer: 0.105641 s? ranker::test_unrank_rank.400.100 # @done@ 238859975 : 0.105641 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 6.21246e-05 of 6.21246e-05 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 140467 : 6.21246e-05 s?
+Timer: 0.000137792 of 0.0222671 s? unrank::test_unrank_rank(400,100) # @done@ 50347126 : 0.0222671 s?
+Timer: 5.89473e-05 of 0.00919769 s? rank::test_unrank_rank(400,100) # @done@ 20796480 : 0.00919769 s?
+Timer: 0.0316052 s? ranker::test_unrank_rank.400.100 # @done@ 71460993 : 0.0316052 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23027712 ; resident= 3010560 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1560576 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+nfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.15517e-06 of 3.15517e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7134 : 3.15517e-06 s?
+Timer: 0.000252309 of 0.0371353 s? unrank::test_unrank_rank(400,100) # @done@ 83964953 : 0.0371353 s?
+Timer: 0.00922496 of 1.00224 s? rank::test_unrank_rank(400,100) # @done@ 2266119213 : 1.00224 s?
+Timer: 1.04024 s? ranker::test_unrank_rank.400.100 # @done@ 2352041235 : 1.04024 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rnf size= 23027712 ; resident= 3141632 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1560576 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 66 : num_eps_closed_states= 14 : tab_entries= 5614
+
+
+TESTING: REX=/987(a|b|c|d|(1|2|3)(1|2|3)*)*(1|2|3)/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.25335e-06 of 3.25335e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7356 : 3.25335e-06 s?
+Timer: 0.000553416 of 0.0617837 s? unrank::test_unrank_rank(400,100) # @done@ 139696215 : 0.0617837 s?
+Timer: 0.00036192 of 0.0412199 s? rank::test_unrank_rank(400,100) # @done@ 93200482 : 0.0412199 s?
+Timer: 0.103084 s? ranker::test_unrank_rank.400.100 # @done@ 233077974 : 0.103084 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.23124e-06 of 3.23124e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7306 : 3.23124e-06 s?
+Timer: 0.000139498 of 0.0218951 s? unrank::test_unrank_rank(400,100) # @done@ 49506095 : 0.0218951 s?
+Timer: 5.95408e-05 of 0.0093208 s? rank::test_unrank_rank(400,100) # @done@ 21074827 : 0.0093208 s?
+Timer: 0.0312987 s? ranker::test_unrank_rank.400.100 # @done@ 70768103 : 0.0312987 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1231
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1231
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23162880 ; resident= 3198976 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1695744 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+nfa_num_matches= 34681812598778787255608699093476146089211713624036610182402218716812503870910302200312795155795868963692099440610859309399588755565205933891728838613312670371640317815246052899202451500458424752076478780428979569878744176140530937203724807952445817282364122639869680225438662468221057027921554893568541052522804002164150753628084027510686552108850575469184413899216125952
+nfa_ambig= 4.29156e+09
+Timer: 3.08484e-06 of 3.08484e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6975 : 3.08484e-06 s?
+Timer: 0.000481758 of 0.0481128 s? unrank::test_unrank_rank(400,100) # @done@ 108785635 : 0.0481128 s?
+Timer: 0.0117336 of 1.15606 s? rank::test_unrank_rank(400,100) # @done@ 2613913855 : 1.15606 s?
+Timer: 1.20518 s? ranker::test_unrank_rank.400.100 # @done@ 2724983809 : 1.20518 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1231
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1231
+MemoryInfo:RANKER:SIZE:used-rnf size= 23216128 ; resident= 3330048 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1748992 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 74 : num_eps_closed_states= 17 : tab_entries= 6817
+
+
+TESTING: REX=/(1|2|3)(a|b|c|d||(1|2|3)*)*789|(1|2|3)(a|b|c|d||(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.18259e-06 of 3.18259e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7196 : 3.18259e-06 s?
+Timer: 0.000476789 of 0.0628355 s? unrank::test_unrank_rank(400,100) # @done@ 142074479 : 0.0628355 s?
+Timer: 0.000312657 of 0.0421525 s? rank::test_unrank_rank(400,100) # @done@ 95309099 : 0.0421525 s?
+Timer: 0.105069 s? ranker::test_unrank_rank.400.100 # @done@ 237566281 : 0.105069 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.27679e-06 of 3.27679e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7409 : 3.27679e-06 s?
+Timer: 0.000206826 of 0.0222618 s? unrank::test_unrank_rank(400,100) # @done@ 50335086 : 0.0222618 s?
+Timer: 7.63343e-05 of 0.00834407 s? rank::test_unrank_rank(400,100) # @done@ 18866398 : 0.00834407 s?
+Timer: 0.0306876 s? ranker::test_unrank_rank.400.100 # @done@ 69386331 : 0.0306876 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23298048 ; resident= 3403776 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1830912 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 134 : num_eps_closed_states= 27 : tab_entries= 10827
+
+nfa_num_matches= 273511188088991191692858256514784383665078269061151066972616261769789020365720638905825548139030525482898780608567065043446469912963022001821470356150441611104806497485979665375685032895241347666119647479604185445309899271079770654051807410801158475152528427581344355034700682972987831378551719562834693533910468147002097704276707985606
+nfa_ambig= 2
+Timer: 2.9902e-06 of 2.9902e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6761 : 2.9902e-06 s?
+Timer: 0.000363943 of 0.037401 s? unrank::test_unrank_rank(400,100) # @done@ 84565670 : 0.037401 s?
+Timer: 0.0172882 of 1.71048 s? rank::test_unrank_rank(400,100) # @done@ 3867495398 : 1.71048 s?
+Timer: 1.74886 s? ranker::test_unrank_rank.400.100 # @done@ 3954263967 : 1.74886 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:used-rnf size= 23425024 ; resident= 3538944 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1957888 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 134 : num_eps_closed_states= 27 : tab_entries= 10827
+
+
+TESTING: REX=/(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789|(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.18789e-06 of 3.18789e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7208 : 3.18789e-06 s?
+Timer: 0.000482774 of 0.0621303 s? unrank::test_unrank_rank(400,100) # @done@ 140479901 : 0.0621303 s?
+Timer: 0.000312674 of 0.0410533 s? rank::test_unrank_rank(400,100) # @done@ 92823813 : 0.0410533 s?
+Timer: 0.103258 s? ranker::test_unrank_rank.400.100 # @done@ 233471785 : 0.103258 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 136755594044495595846429128257392191832539134530575533486308130884894510182860319452912774069515262741449390304283532521723234956481511000910735178075220805552403248742989832687842516447620673833059823739802092722654949635539885327025903705400579237576264213790672177517350341486493915689275859781417346766955234073501048852138353992803
+Timer: 3.2193e-06 of 3.2193e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7279 : 3.2193e-06 s?
+Timer: 0.00020655 of 0.0218283 s? unrank::test_unrank_rank(400,100) # @done@ 49354874 : 0.0218283 s?
+Timer: 7.86589e-05 of 0.00822291 s? rank::test_unrank_rank(400,100) # @done@ 18592439 : 0.00822291 s?
+Timer: 0.0301333 s? ranker::test_unrank_rank.400.100 # @done@ 68133020 : 0.0301333 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1114
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1114
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1232
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1232
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23703552 ; resident= 3735552 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2236416 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 150 : num_eps_closed_states= 33 : tab_entries= 13233
+
+nfa_num_matches= 69363625197557574511217398186952292178423427248073220364804437433625007741820604400625590311591737927384198881221718618799177511130411867783457677226625340743280635630492105798404903000916849504152957560857959139757488352281061874407449615904891634564728245279739360450877324936442114055843109787137082105045608004328301507256168055021373104217701150938368827798432251904
+nfa_ambig= 8.58313e+09
+Timer: 3.21531e-06 of 3.21531e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7270 : 3.21531e-06 s?
+Timer: 0.000486602 of 0.0490718 s? unrank::test_unrank_rank(400,100) # @done@ 110954051 : 0.0490718 s?
+Timer: 0.0210127 of 2.07865 s? rank::test_unrank_rank(400,100) # @done@ 4699949437 : 2.07865 s?
+Timer: 2.12927 s? ranker::test_unrank_rank.400.100 # @done@ 4814400057 : 2.12927 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1232
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1232
+MemoryInfo:RANKER:SIZE:used-rnf size= 23752704 ; resident= 3866624 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2285568 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 150 : num_eps_closed_states= 33 : tab_entries= 13233
+
+
+TESTING: REX=/((1|2|3)(a|b|c|d||(1|2|3)*)*789|(1|2|3)(a|b|c|d||(1|2|3)*)*789)*/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 222987679757197477353117535545982715929100065999589592438636686838990299819917159017848256067640935612013131329279400939382071143408501379332621902442551422426437262249894972826895683716069244666233484360963293426635992731195870597161355975504750865350922868364220848551924474233686890701356104006023065649781419397930848407621027368186
+Timer: 3.11492e-06 of 3.11492e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7043 : 3.11492e-06 s?
+Timer: 0.000690001 of 0.0637573 s? unrank::test_unrank_rank(400,100) # @done@ 144158592 : 0.0637573 s?
+Timer: 0.000427863 of 0.0429292 s? rank::test_unrank_rank(400,100) # @done@ 97065135 : 0.0429292 s?
+Timer: 0.106774 s? ranker::test_unrank_rank.400.100 # @done@ 241422390 : 0.106774 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 222987679757197477353117535545982715929100065999589592438636686838990299819917159017848256067640935612013131329279400939382071143408501379332621902442551422426437262249894972826895683716069244666233484360963293426635992731195870597161355975504750865350922868364220848551924474233686890701356104006023065649781419397930848407621027368186
+Timer: 3.20868e-06 of 3.20868e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7255 : 3.20868e-06 s?
+Timer: 0.000256039 of 0.0267017 s? unrank::test_unrank_rank(400,100) # @done@ 60373997 : 0.0267017 s?
+Timer: 0.000120703 of 0.0124293 s? rank::test_unrank_rank(400,100) # @done@ 28103321 : 0.0124293 s?
+Timer: 0.0392196 s? ranker::test_unrank_rank.400.100 # @done@ 88677614 : 0.0392196 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1116
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1116
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23568384 ; resident= 3579904 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2101248 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 140 : num_eps_closed_states= 27 : tab_entries= 10827
+
+nfa_num_matches= 724144490243154738465936026252904806398161970724941347424790476711572321318931557344517195883078526192602273779444228265617398703618599145152541056530837229472086345581302085872081181685458518874488443912197995019795790077544789284585446847088471026830951331513829084786564824886967730831789427184072914073099302081497407816768599708802
+nfa_ambig= 3.24746
+Timer: 3.60894e-06 of 3.60894e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 8160 : 3.60894e-06 s?
+Timer: 0.000373175 of 0.037265 s? unrank::test_unrank_rank(400,100) # @done@ 84258123 : 0.037265 s?
+Timer: 0.0180331 of 1.7882 s? rank::test_unrank_rank(400,100) # @done@ 4043222686 : 1.7882 s?
+Timer: 1.82667 s? ranker::test_unrank_rank.400.100 # @done@ 4130204672 : 1.82667 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1116
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1116
+MemoryInfo:RANKER:SIZE:used-rnf size= 23597056 ; resident= 3710976 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2129920 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 140 : num_eps_closed_states= 27 : tab_entries= 10827
+
+
+TESTING: REX=/((1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789|(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789)*/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 222987679757197477353117535545982715929100065999589592438636686838990299819917159017848256067640935612013131329279400939382071143408501379332621902442551422426437262249894972826895683716069244666233484360963293426635992731195870597161355975504750865350922868364220848551924474233686890701356104006023065649781419397930848407621027368186
+Timer: 3.09502e-06 of 3.09502e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6998 : 3.09502e-06 s?
+Timer: 0.000636059 of 0.0628841 s? unrank::test_unrank_rank(400,100) # @done@ 142184270 : 0.0628841 s?
+Timer: 0.000426652 of 0.0422233 s? rank::test_unrank_rank(400,100) # @done@ 95469236 : 0.0422233 s?
+Timer: 0.105188 s? ranker::test_unrank_rank.400.100 # @done@ 237835422 : 0.105188 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 222987679757197477353117535545982715929100065999589592438636686838990299819917159017848256067640935612013131329279400939382071143408501379332621902442551422426437262249894972826895683716069244666233484360963293426635992731195870597161355975504750865350922868364220848551924474233686890701356104006023065649781419397930848407621027368186
+Timer: 3.16578e-06 of 3.16578e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7158 : 3.16578e-06 s?
+Timer: 0.000256434 of 0.0265546 s? unrank::test_unrank_rank(400,100) # @done@ 60041471 : 0.0265546 s?
+Timer: 0.000119787 of 0.0123488 s? rank::test_unrank_rank(400,100) # @done@ 27921263 : 0.0123488 s?
+Timer: 0.0389931 s? ranker::test_unrank_rank.400.100 # @done@ 88165564 : 0.0389931 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1115
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1115
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1233
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1233
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 23842816 ; resident= 3956736 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2375680 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 156 : num_eps_closed_states= 33 : tab_entries= 13233
+
+nfa_num_matches= 96861418256806116147639865945599506323166258165462453804376249169645000806916674154672416014271832920124292318583041518418383401661341746858970983675025388777965366563804148576479719254244105243042341180319074636418931514011055346294439909870232304618627557947605550319522947466920074191306227534808826595490279793018375454587326991330639947679149403122620516439328555008
+nfa_ambig= 1.3246e+10
+Timer: 3.25866e-06 of 3.25866e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7368 : 3.25866e-06 s?
+Timer: 0.000475687 of 0.0489538 s? unrank::test_unrank_rank(400,100) # @done@ 110687095 : 0.0489538 s?
+Timer: 0.0218997 of 2.22752 s? rank::test_unrank_rank(400,100) # @done@ 5036550083 : 2.22752 s?
+Timer: 2.27804 s? ranker::test_unrank_rank.400.100 # @done@ 5150782755 : 2.27804 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1233
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1233
+MemoryInfo:RANKER:SIZE:used-rnf size= 23973888 ; resident= 4087808 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 2506752 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 156 : num_eps_closed_states= 33 : tab_entries= 13233
+
+
+TESTING: REX=/2(1|3|4)*/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 23516930362184441904154757191978265405502649870929105254290407736420695183860978052193099509815711386051650778275118637288976597690608188898048361484845085675986761774586771064147761111362667
+Timer: 2.90042e-06 of 2.90042e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6558 : 2.90042e-06 s?
+Timer: 0.000381955 of 0.0387545 s? unrank::test_unrank_rank(400,100) # @done@ 87625991 : 0.0387545 s?
+Timer: 0.000248948 of 0.025056 s? rank::test_unrank_rank(400,100) # @done@ 56652944 : 0.025056 s?
+Timer: 0.063881 s? ranker::test_unrank_rank.400.100 # @done@ 144438490 : 0.063881 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 23516930362184441904154757191978265405502649870929105254290407736420695183860978052193099509815711386051650778275118637288976597690608188898048361484845085675986761774586771064147761111362667
+Timer: 3.04416e-06 of 3.04416e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6883 : 3.04416e-06 s?
+Timer: 0.000148149 of 0.015465 s? unrank::test_unrank_rank(400,100) # @done@ 34967096 : 0.015465 s?
+Timer: 4.50869e-05 of 0.00471881 s? rank::test_unrank_rank(400,100) # @done@ 10669479 : 0.00471881 s?
+Timer: 0.0202466 s? ranker::test_unrank_rank.400.100 # @done@ 45778635 : 0.0202466 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 20 : num_eps_closed_states= 5 : tab_entries= 2005
+
+nfa_num_matches= 23516930362184441904154757191978265405502649870929105254290407736420695183860978052193099509815711386051650778275118637288976597690608188898048361484845085675986761774586771064147761111362667
+Timer: 3.02204e-06 of 3.02204e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6833 : 3.02204e-06 s?
+Timer: 0.000191442 of 0.0202683 s? unrank::test_unrank_rank(400,100) # @done@ 45827824 : 0.0202683 s?
+Timer: 0.0027072 of 0.271726 s? rank::test_unrank_rank(400,100) # @done@ 614386372 : 0.271726 s?
+Timer: 0.292156 s? ranker::test_unrank_rank.400.100 # @done@ 660580637 : 0.292156 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 633
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 633
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 20 : num_eps_closed_states= 5 : tab_entries= 2005
+
+
+TESTING: REX=/(1|2|3)...789/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 7
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+dfa_num_matches= 0
+Timer: 8.76759e-06 of 8.76759e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.7 19824 : 8.76759e-06 s?
+Timer: 1.23252e-05 of 0.00168673 s? unrank::test_unrank_rank(7,100) # @done@ 3813796 : 0.00168673 s?
+Timer: 8.30453e-06 of 0.00116148 s? rank::test_unrank_rank(7,100) # @done@ 2626159 : 0.00116148 s?
+Timer: 0.00290317 s? ranker::test_unrank_rank.400.100 # @done@ 6564218 : 0.00290317 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 7
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 7
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+ffa_num_matches= 0
+Timer: 9.26559e-06 of 9.26559e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.7 20950 : 9.26559e-06 s?
+Timer: 1.93405e-06 of 0.000194189 s? unrank::test_unrank_rank(7,100) # @done@ 439071 : 0.000194189 s?
+Timer: 6.40852e-07 of 6.74968e-05 s? rank::test_unrank_rank(7,100) # @done@ 152614 : 6.74968e-05 s?
+Timer: 0.000315506 s? ranker::test_unrank_rank.400.100 # @done@ 713376 : 0.000315506 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 7
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 9 : tab_entries= 3609
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 7
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 34 : num_eps_closed_states= 10 : tab_entries= 4010
+
+nfa_num_matches= 0
+Timer: 8.52965e-06 of 8.52965e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.7 19286 : 8.52965e-06 s?
+Timer: 3.19187e-06 of 0.000338947 s? unrank::test_unrank_rank(7,100) # @done@ 766377 : 0.000338947 s?
+Timer: 2.13387e-05 of 0.00213178 s? rank::test_unrank_rank(7,100) # @done@ 4820080 : 0.00213178 s?
+Timer: 0.00253412 s? ranker::test_unrank_rank.400.100 # @done@ 5729775 : 0.00253412 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 7
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 26
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2600960 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 34 : num_eps_closed_states= 10 : tab_entries= 4010
+
+
+TESTING: REX=/.*x......../
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 71684096 ; resident= 51695616 ; share= 1650688 ; text= 319488 ; lib= 0 ; data= 50216960 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 512 : tab_entries= 205312
+
+dfa_num_matches= 7722290933525640600211822030617044298106994854006929019211975430306017973023246588891780660057082277731618143371736829800656125224793166441034606385156871149333316805449615523754129147116984792518751254413354273103940801881490087241462213064022426421911592197453530791891358717138261540871809131779911355545458434255042321557423648010226143416255321759481985875395765664587605174461269095552250853475210133761715054262310087757376882825390959672305365109363294899061836305749794945410055749818026195461203945977886568996886090639223128379934735346557394237949958169746877599529714654735382298809762371374106667556363104643277929298546698528517162656279880459930104045210267288096602755372002817733608874567575316930500824731800785685958776599521132731561043801518008253390349881990205626819283726269785361488136179795844970699780869890756857566218930321915278888678201440681827254964965856437395511197590300209437142003442599950379602277911674788208191414992896
+Timer: 4.13259e-06 of 4.13259e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 9344 : 4.13259e-06 s?
+Timer: 0.00495725 of 0.433875 s? unrank::test_unrank_rank(400,100) # @done@ 981015233 : 0.433875 s?
+Timer: 0.00454763 of 0.39272 s? rank::test_unrank_rank(400,100) # @done@ 887960791 : 0.39272 s?
+Timer: 0.826798 s? ranker::test_unrank_rank.400.100 # @done@ 1869434486 : 0.826798 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:used-rdt size= 71684096 ; resident= 51707904 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 50216960 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 512 : tab_entries= 205312
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 128180224 ; resident= 108232704 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 106713088 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 512 : tab_entries= 205312
+
+ffa_num_matches= 7722290933525640600211822030617044298106994854006929019211975430306017973023246588891780660057082277731618143371736829800656125224793166441034606385156871149333316805449615523754129147116984792518751254413354273103940801881490087241462213064022426421911592197453530791891358717138261540871809131779911355545458434255042321557423648010226143416255321759481985875395765664587605174461269095552250853475210133761715054262310087757376882825390959672305365109363294899061836305749794945410055749818026195461203945977886568996886090639223128379934735346557394237949958169746877599529714654735382298809762371374106667556363104643277929298546698528517162656279880459930104045210267288096602755372002817733608874567575316930500824731800785685958776599521132731561043801518008253390349881990205626819283726269785361488136179795844970699780869890756857566218930321915278888678201440681827254964965856437395511197590300209437142003442599950379602277911674788208191414992896
+Timer: 4.28384e-06 of 4.28384e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 9686 : 4.28384e-06 s?
+Timer: 0.000411172 of 0.0415413 s? unrank::test_unrank_rank(400,100) # @done@ 93927113 : 0.0415413 s?
+Timer: 0.000213027 of 0.0211897 s? rank::test_unrank_rank(400,100) # @done@ 47910981 : 0.0211897 s?
+Timer: 0.0628955 s? ranker::test_unrank_rank.400.100 # @done@ 142210029 : 0.0628955 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:used-rft size= 128180224 ; resident= 108236800 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 106713088 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 512 : tab_entries= 205312
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 128585728 ; resident= 108580864 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 107118592 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 44 : num_eps_closed_states= 11 : tab_entries= 4411
+
+nfa_num_matches= 7722290933525640600211822030617044298106994854006929019211975430306017973023246588891780660057082277731618143371736829800656125224793166441034606385156871149333316805449615523754129147116984792518751254413354273103940801881490087241462213064022426421911592197453530791891358717138261540871809131779911355545458434255042321557423648010226143416255321759481985875395765664587605174461269095552250853475210133761715054262310087757376882825390959672305365109363294899061836305749794945410055749818026195461203945977886568996886090639223128379934735346557394237949958169746877599529714654735382298809762371374106667556363104643277929298546698528517162656279880459930104045210267288096602755372002817733608874567575316930500824731800785685958776599521132731561043801518008253390349881990205626819283726269785361488136179795844970699780869890756857566218930321915278888678201440681827254964965856437395511197590300209437142003442599950379602277911674788208191414992896
+Timer: 3.78142e-06 of 3.78142e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 8550 : 3.78142e-06 s?
+Timer: 0.00041065 of 0.0356005 s? unrank::test_unrank_rank(400,100) # @done@ 80494750 : 0.0356005 s?
+Timer: 0.00229215 of 0.233357 s? rank::test_unrank_rank(400,100) # @done@ 527633082 : 0.233357 s?
+Timer: 0.269361 s? ranker::test_unrank_rank.400.100 # @done@ 609040855 : 0.269361 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 3193
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 3193
+MemoryInfo:RANKER:SIZE:used-rnf size= 128720896 ; resident= 108724224 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 107253760 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 44 : num_eps_closed_states= 11 : tab_entries= 4411
+
+
+TESTING: REX=/12+/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+dfa_num_matches= 1
+Timer: 3.07688e-06 of 3.07688e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6957 : 3.07688e-06 s?
+Timer: 0.000387816 of 0.000387816 s? unrank::test_unrank_rank(400,1) # @done@ 876874 : 0.000387816 s?
+Timer: 0.000234261 of 0.000234261 s? rank::test_unrank_rank(400,1) # @done@ 529676 : 0.000234261 s?
+Timer: 0.000649104 s? ranker::test_unrank_rank.400.100 # @done@ 1467659 : 0.000649104 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+ffa_num_matches= 1
+Timer: 3.64697e-06 of 3.64697e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 8246 : 3.64697e-06 s?
+Timer: 6.2462e-05 of 6.2462e-05 s? unrank::test_unrank_rank(400,1) # @done@ 141230 : 6.2462e-05 s?
+Timer: 2.32109e-05 of 2.32109e-05 s? rank::test_unrank_rank(400,1) # @done@ 52481 : 2.32109e-05 s?
+Timer: 0.000111656 s? ranker::test_unrank_rank.400.100 # @done@ 252460 : 0.000111656 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 3 : tab_entries= 1203
+
+nfa_num_matches= 1
+Timer: 3.03354e-06 of 3.03354e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6859 : 3.03354e-06 s?
+Timer: 8.39586e-05 of 8.39586e-05 s? unrank::test_unrank_rank(400,1) # @done@ 189835 : 8.39586e-05 s?
+Timer: 0.000971316 of 0.000971316 s? rank::test_unrank_rank(400,1) # @done@ 2196199 : 0.000971316 s?
+Timer: 0.00108413 s? ranker::test_unrank_rank.400.100 # @done@ 2451267 : 0.00108413 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 3 : tab_entries= 1203
+
+
+TESTING: REX=/1{0,3}/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 4
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+dfa_num_matches= 0
+Timer: 8.7844e-06 of 8.7844e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.4 19862 : 8.7844e-06 s?
+Timer: 4.67879e-06 of 4.67879e-06 s? unrank::test_unrank_rank(4,1) # @done@ 10579 : 4.67879e-06 s?
+Timer: 2.54837e-06 of 2.54837e-06 s? rank::test_unrank_rank(4,1) # @done@ 5762 : 2.54837e-06 s?
+Timer: 3.56175e-05 s? ranker::test_unrank_rank.400.100 # @done@ 80533 : 3.56175e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 4
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 4
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+ffa_num_matches= 0
+Timer: 9.27488e-06 of 9.27488e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.4 20971 : 9.27488e-06 s?
+Timer: 2.15475e-06 of 2.15475e-06 s? unrank::test_unrank_rank(4,1) # @done@ 4872 : 2.15475e-06 s?
+Timer: 7.28421e-07 of 7.28421e-07 s? rank::test_unrank_rank(4,1) # @done@ 1647 : 7.28421e-07 s?
+Timer: 3.30598e-05 s? ranker::test_unrank_rank.400.100 # @done@ 74750 : 3.30598e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 4
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 6 : tab_entries= 2406
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 4
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 10 : num_eps_closed_states= 5 : tab_entries= 2005
+
+nfa_num_matches= 0
+Timer: 9.1506e-06 of 9.1506e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.4 20690 : 9.1506e-06 s?
+Timer: 2.22684e-06 of 2.22684e-06 s? unrank::test_unrank_rank(4,1) # @done@ 5035 : 2.22684e-06 s?
+Timer: 1.75675e-05 of 1.75675e-05 s? rank::test_unrank_rank(4,1) # @done@ 39721 : 1.75675e-05 s?
+Timer: 5.0465e-05 s? ranker::test_unrank_rank.400.100 # @done@ 114104 : 5.0465e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 4
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 10 : num_eps_closed_states= 5 : tab_entries= 2005
+
+
+TESTING: REX=/1{1,3}/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.78573e-06 of 8.78573e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19865 : 8.78573e-06 s?
+Timer: 3.6651e-06 of 3.6651e-06 s? unrank::test_unrank_rank(3,1) # @done@ 8287 : 3.6651e-06 s?
+Timer: 1.97076e-06 of 1.97076e-06 s? rank::test_unrank_rank(3,1) # @done@ 4456 : 1.97076e-06 s?
+Timer: 3.41217e-05 s? ranker::test_unrank_rank.400.100 # @done@ 77151 : 3.41217e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 8.71629e-06 of 8.71629e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19708 : 8.71629e-06 s?
+Timer: 1.83852e-06 of 1.83852e-06 s? unrank::test_unrank_rank(3,1) # @done@ 4157 : 1.83852e-06 s?
+Timer: 6.06797e-07 of 6.06797e-07 s? rank::test_unrank_rank(3,1) # @done@ 1372 : 6.06797e-07 s?
+Timer: 3.14265e-05 s? ranker::test_unrank_rank.400.100 # @done@ 71057 : 3.14265e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+nfa_num_matches= 0
+Timer: 9.28505e-06 of 9.28505e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 20994 : 9.28505e-06 s?
+Timer: 2.03976e-06 of 2.03976e-06 s? unrank::test_unrank_rank(3,1) # @done@ 4612 : 2.03976e-06 s?
+Timer: 1.26039e-05 of 1.26039e-05 s? rank::test_unrank_rank(3,1) # @done@ 28498 : 1.26039e-05 s?
+Timer: 4.55133e-05 s? ranker::test_unrank_rank.400.100 # @done@ 102908 : 4.55133e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+
+TESTING: REX=/1{2,3}/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.78042e-06 of 8.78042e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19853 : 8.78042e-06 s?
+Timer: 3.59876e-06 of 3.59876e-06 s? unrank::test_unrank_rank(3,1) # @done@ 8137 : 3.59876e-06 s?
+Timer: 1.98226e-06 of 1.98226e-06 s? rank::test_unrank_rank(3,1) # @done@ 4482 : 1.98226e-06 s?
+Timer: 3.40677e-05 s? ranker::test_unrank_rank.400.100 # @done@ 77029 : 3.40677e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 8.69816e-06 of 8.69816e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19667 : 8.69816e-06 s?
+Timer: 1.51434e-06 of 1.51434e-06 s? unrank::test_unrank_rank(3,1) # @done@ 3424 : 1.51434e-06 s?
+Timer: 4.29003e-07 of 4.29003e-07 s? rank::test_unrank_rank(3,1) # @done@ 970 : 4.29003e-07 s?
+Timer: 3.05871e-05 s? ranker::test_unrank_rank.400.100 # @done@ 69159 : 3.05871e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+nfa_num_matches= 0
+Timer: 8.80386e-06 of 8.80386e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19906 : 8.80386e-06 s?
+Timer: 1.9889e-06 of 1.9889e-06 s? unrank::test_unrank_rank(3,1) # @done@ 4497 : 1.9889e-06 s?
+Timer: 1.13239e-05 of 1.13239e-05 s? rank::test_unrank_rank(3,1) # @done@ 25604 : 1.13239e-05 s?
+Timer: 4.3834e-05 s? ranker::test_unrank_rank.400.100 # @done@ 99111 : 4.3834e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+
+TESTING: REX=/1{3}/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+dfa_num_matches= 0
+Timer: 8.79369e-06 of 8.79369e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19883 : 8.79369e-06 s?
+Timer: 3.60363e-06 of 3.60363e-06 s? unrank::test_unrank_rank(3,1) # @done@ 8148 : 3.60363e-06 s?
+Timer: 1.97607e-06 of 1.97607e-06 s? rank::test_unrank_rank(3,1) # @done@ 4468 : 1.97607e-06 s?
+Timer: 3.4089e-05 s? ranker::test_unrank_rank.400.100 # @done@ 77077 : 3.4089e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 3
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+ffa_num_matches= 0
+Timer: 8.71762e-06 of 8.71762e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19711 : 8.71762e-06 s?
+Timer: 1.56255e-06 of 1.56255e-06 s? unrank::test_unrank_rank(3,1) # @done@ 3533 : 1.56255e-06 s?
+Timer: 3.83007e-07 of 3.83007e-07 s? rank::test_unrank_rank(3,1) # @done@ 866 : 3.83007e-07 s?
+Timer: 3.17728e-05 s? ranker::test_unrank_rank.400.100 # @done@ 71840 : 3.17728e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 3
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 5 : tab_entries= 2005
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 3
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+nfa_num_matches= 0
+Timer: 8.60926e-06 of 8.60926e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.3 19466 : 8.60926e-06 s?
+Timer: 2.01234e-06 of 2.01234e-06 s? unrank::test_unrank_rank(3,1) # @done@ 4550 : 2.01234e-06 s?
+Timer: 8.51904e-06 of 8.51904e-06 s? rank::test_unrank_rank(3,1) # @done@ 19262 : 8.51904e-06 s?
+Timer: 3.95975e-05 s? ranker::test_unrank_rank.400.100 # @done@ 89532 : 3.95975e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 3
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 4 : tab_entries= 1604
+
+
+TESTING: REX=/(b|3(1|3)*)*/A
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 555
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 555
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 112102381301657019753922131204008107032943249802439891737991109609642417687024271467241971909001000928433174016012202680530522970872221529003044406006693244742562963426
+Timer: 2.90307e-06 of 2.90307e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6564 : 2.90307e-06 s?
+Timer: 0.000545715 of 0.0480593 s? unrank::test_unrank_rank(400,100) # @done@ 108664635 : 0.0480593 s?
+Timer: 0.000304031 of 0.0312954 s? rank::test_unrank_rank(400,100) # @done@ 70760527 : 0.0312954 s?
+Timer: 0.0794196 s? ranker::test_unrank_rank.400.100 # @done@ 179571976 : 0.0794196 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 555
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 555
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 555
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 555
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 112102381301657019753922131204008107032943249802439891737991109609642417687024271467241971909001000928433174016012202680530522970872221529003044406006693244742562963426
+Timer: 3.02204e-06 of 3.02204e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6833 : 3.02204e-06 s?
+Timer: 0.000143391 of 0.0146493 s? unrank::test_unrank_rank(400,100) # @done@ 33122818 : 0.0146493 s?
+Timer: 5.59686e-05 of 0.00583295 s? rank::test_unrank_rank(400,100) # @done@ 13188617 : 0.00583295 s?
+Timer: 0.0205448 s? ranker::test_unrank_rank.400.100 # @done@ 46452840 : 0.0205448 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 555
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 555
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+Setting known_ambiguous g_flag
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 708
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 708
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 26 : num_eps_closed_states= 5 : tab_entries= 2005
+
+nfa_num_matches= 1035722169294162632232661620017046927244832065983809073340966124142778896980912976129305419064979069529234551859003747317772755193320585599512311299687196223499595523759754307865018574999234542481081379404552077312
+nfa_ambig= 1.80046e+10
+Timer: 3.38294e-06 of 3.38294e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7649 : 3.38294e-06 s?
+Timer: 0.000243034 of 0.025147 s? unrank::test_unrank_rank(400,100) # @done@ 56858836 : 0.025147 s?
+Timer: 0.00453718 of 0.464743 s? rank::test_unrank_rank(400,100) # @done@ 1050809609 : 0.464743 s?
+Timer: 0.49002 s? ranker::test_unrank_rank.400.100 # @done@ 1107960681 : 0.49002 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 708
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 708
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 26 : num_eps_closed_states= 5 : tab_entries= 2005
+
+
+TESTING: REX=/((1|2)(a|b)*)*/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 3334007216439927137039925895360628898572379161157954080198128905882018618908816035760716100435777145371464955296716620222944400827059682540181678026165415023047578789757007279231539142955907012364482508067943300990845374018738230645581938688
+Timer: 3.12244e-06 of 3.12244e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7060 : 3.12244e-06 s?
+Timer: 0.000605944 of 0.056637 s? unrank::test_unrank_rank(400,100) # @done@ 128059321 : 0.056637 s?
+Timer: 0.000360661 of 0.036976 s? rank::test_unrank_rank(400,100) # @done@ 83604698 : 0.036976 s?
+Timer: 0.0936798 s? ranker::test_unrank_rank.400.100 # @done@ 211815071 : 0.0936798 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 3334007216439927137039925895360628898572379161157954080198128905882018618908816035760716100435777145371464955296716620222944400827059682540181678026165415023047578789757007279231539142955907012364482508067943300990845374018738230645581938688
+Timer: 3.24141e-06 of 3.24141e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7329 : 3.24141e-06 s?
+Timer: 0.000166947 of 0.0165142 s? unrank::test_unrank_rank(400,100) # @done@ 37339574 : 0.0165142 s?
+Timer: 5.86899e-05 of 0.00512714 s? rank::test_unrank_rank(400,100) # @done@ 11592742 : 0.00512714 s?
+Timer: 0.0217053 s? ranker::test_unrank_rank.400.100 # @done@ 49076891 : 0.0217053 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 26 : num_eps_closed_states= 5 : tab_entries= 2005
+
+nfa_num_matches= 3334007216439927137039925895360628898572379161157954080198128905882018618908816035760716100435777145371464955296716620222944400827059682540181678026165415023047578789757007279231539142955907012364482508067943300990845374018738230645581938688
+Timer: 3.18259e-06 of 3.18259e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 7196 : 3.18259e-06 s?
+Timer: 0.000238924 of 0.0239436 s? unrank::test_unrank_rank(400,100) # @done@ 54137794 : 0.0239436 s?
+Timer: 0.00398101 of 0.398109 s? rank::test_unrank_rank(400,100) # @done@ 900145589 : 0.398109 s?
+Timer: 0.422162 s? ranker::test_unrank_rank.400.100 # @done@ 954530807 : 0.422162 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 800
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 800
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 26 : num_eps_closed_states= 5 : tab_entries= 2005
+
+
+TESTING: REX=/(|1)/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+dfa_num_matches= 0
+Timer: 8.86003e-06 of 8.86003e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 20033 : 8.86003e-06 s?
+Timer: 1.46303e-06 of 1.46303e-06 s? unrank::test_unrank_rank(1,1) # @done@ 3308 : 1.46303e-06 s?
+Timer: 8.09357e-07 of 8.09357e-07 s? rank::test_unrank_rank(1,1) # @done@ 1830 : 8.09357e-07 s?
+Timer: 3.21049e-05 s? ranker::test_unrank_rank.400.100 # @done@ 72591 : 3.21049e-05 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 1
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+ffa_num_matches= 0
+Timer: 8.73884e-06 of 8.73884e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19759 : 8.73884e-06 s?
+Timer: 1.14681e-06 of 1.14681e-06 s? unrank::test_unrank_rank(1,1) # @done@ 2593 : 1.14681e-06 s?
+Timer: 3.63547e-07 of 3.63547e-07 s? rank::test_unrank_rank(1,1) # @done@ 822 : 3.63547e-07 s?
+Timer: 3.00524e-05 s? ranker::test_unrank_rank.400.100 # @done@ 67950 : 3.00524e-05 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 1
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 3 : tab_entries= 1203
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 2 : tab_entries= 802
+
+nfa_num_matches= 0
+Timer: 8.66808e-06 of 8.66808e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.1 19599 : 8.66808e-06 s?
+Timer: 1.26578e-06 of 1.26578e-06 s? unrank::test_unrank_rank(1,1) # @done@ 2862 : 1.26578e-06 s?
+Timer: 6.45451e-06 of 6.45451e-06 s? rank::test_unrank_rank(1,1) # @done@ 14594 : 6.45451e-06 s?
+Timer: 3.6406e-05 s? ranker::test_unrank_rank.400.100 # @done@ 82316 : 3.6406e-05 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 1
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 0
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 6 : num_eps_closed_states= 2 : tab_entries= 802
+
+
+TESTING: REX=/2*/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 2 : tab_entries= 802
+
+dfa_num_matches= 1
+Timer: 2.97737e-06 of 2.97737e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6732 : 2.97737e-06 s?
+Timer: 0.00039064 of 0.00039064 s? unrank::test_unrank_rank(400,1) # @done@ 883258 : 0.00039064 s?
+Timer: 0.000230427 of 0.000230427 s? rank::test_unrank_rank(400,1) # @done@ 521007 : 0.000230427 s?
+Timer: 0.00065098 s? ranker::test_unrank_rank.400.100 # @done@ 1471901 : 0.00065098 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 2 : tab_entries= 802
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 2 : tab_entries= 802
+
+ffa_num_matches= 1
+Timer: 2.93315e-06 of 2.93315e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6632 : 2.93315e-06 s?
+Timer: 6.12537e-05 of 6.12537e-05 s? unrank::test_unrank_rank(400,1) # @done@ 138498 : 6.12537e-05 s?
+Timer: 2.31927e-05 of 2.31927e-05 s? rank::test_unrank_rank(400,1) # @done@ 52440 : 2.31927e-05 s?
+Timer: 0.000107828 s? ranker::test_unrank_rank.400.100 # @done@ 243804 : 0.000107828 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 2 : tab_entries= 802
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 2 : tab_entries= 802
+
+nfa_num_matches= 1
+Timer: 2.89644e-06 of 2.89644e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6549 : 2.89644e-06 s?
+Timer: 8.34093e-05 of 8.34093e-05 s? unrank::test_unrank_rank(400,1) # @done@ 188593 : 8.34093e-05 s?
+Timer: 0.000958038 of 0.000958038 s? rank::test_unrank_rank(400,1) # @done@ 2166176 : 0.000958038 s?
+Timer: 0.00107021 s? ranker::test_unrank_rank.400.100 # @done@ 2419807 : 0.00107021 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 8 : num_eps_closed_states= 2 : tab_entries= 802
+
+
+TESTING: REX=/1|(2*|3)/
+RANKER:SIZE:constructed-udated-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rdt: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+dfa_num_matches= 1
+Timer: 3.02072e-06 of 3.02072e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6830 : 3.02072e-06 s?
+Timer: 0.00039047 of 0.00039047 s? unrank::test_unrank_rank(400,1) # @done@ 882874 : 0.00039047 s?
+Timer: 0.000230457 of 0.000230457 s? rank::test_unrank_rank(400,1) # @done@ 521075 : 0.000230457 s?
+Timer: 0.000650479 s? ranker::test_unrank_rank.400.100 # @done@ 1470769 : 0.000650479 s?
+RANKER:SIZE:used-rdt: Max.Len.Memoized= 400
+RANKER:SIZE:used-rdt: max_achievable_len= 400
+RANKER:SIZE:used-rdt: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rdt: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rdt size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_dfa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rft: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rft: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+ffa_num_matches= 1
+Timer: 3.64299e-06 of 3.64299e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 8237 : 3.64299e-06 s?
+Timer: 9.51163e-05 of 9.51163e-05 s? unrank::test_unrank_rank(400,1) # @done@ 215063 : 9.51163e-05 s?
+Timer: 4.57145e-05 of 4.57145e-05 s? rank::test_unrank_rank(400,1) # @done@ 103363 : 4.57145e-05 s?
+Timer: 0.000166299 s? ranker::test_unrank_rank.400.100 # @done@ 376011 : 0.000166299 s?
+RANKER:SIZE:used-rft: Max.Len.Memoized= 400
+RANKER:SIZE:used-rft: max_achievable_len= 400
+RANKER:SIZE:used-rft: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rft: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rft size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_ffa_tab_t::report_size:RANKER-SIZE: : pdt->num_states= 4 : tab_entries= 1604
+
+RANKER:SIZE:constructed-udated-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:constructed-udated-rnf: max_achievable_len= 400
+RANKER:SIZE:constructed-udated-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:constructed-udated-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:constructed-udated-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 16 : num_eps_closed_states= 4 : tab_entries= 1604
+
+nfa_num_matches= 1
+Timer: 2.99418e-06 of 2.99418e-06 s? ranker::test_unrank_rank.400.100 # [lap]max_len.set-to.400 6770 : 2.99418e-06 s?
+Timer: 8.80514e-05 of 8.80514e-05 s? unrank::test_unrank_rank(400,1) # @done@ 199089 : 8.80514e-05 s?
+Timer: 0.00150396 of 0.00150396 s? rank::test_unrank_rank(400,1) # @done@ 3400526 : 0.00150396 s?
+Timer: 0.00162204 s? ranker::test_unrank_rank.400.100 # @done@ 3667520 : 0.00162204 s?
+RANKER:SIZE:used-rnf: Max.Len.Memoized= 400
+RANKER:SIZE:used-rnf: max_achievable_len= 400
+RANKER:SIZE:used-rnf: capacity(Max.Len.Memoized)= 1
+RANKER:SIZE:used-rnf: capacity(max_achievable_len)= 1
+MemoryInfo:RANKER:SIZE:used-rnf size= 22487040 ; resident= 2613248 ; share= 1662976 ; text= 319488 ; lib= 0 ; data= 1019904 ; dt= 0 ; rank_nfa_tab_t::report_size:RANKER-SIZE: : num_thompson_states= 16 : num_eps_closed_states= 4 : tab_entries= 1604
+
+Timer: 24.3232 s? rank_tests # @done@ 54996066994 : 24.3232 s?

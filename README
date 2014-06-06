@@ -1,0 +1,28 @@
+Directories:
+
+lib/ contains a library for Research work using Finite Automata (RFA)
+     for:
+     (1) pattern matching,
+     (2) ranking / language counting for formatted encryption
+
+
+Build instructions:
+	cd lib
+	make
+
+Testing:
+	make tests
+
+The resulting library is:
+	lib/bin/rank.a
+
+(cleaning: make cleanall)
+
+Examples:
+	lib/test/fa/src/dfa_tests.cc
+          shows how DFA/NFA are constructed and how pattern matching is done
+        lib/test/fa/scripts/dfa_tests.sh  testing script to invoke dfa_tests
+        
+	lib/test/fa_rank/src/fa_rank_tests.cc
+          shows how ranking based on is done
+	lib/test/fa_rank/scripts/fa_rank_tests.sh test script for fa_rank_tests

@@ -1,0 +1,88 @@
+#some simple stuff
+/\x00/
+/1/
+/12/
+/1|2/
+/1|2|3|4|5/
+/(1|2)9/
+/x(1|2)9/
+/(x|y)(1|2)9/
+
+#more complex stuff, but no *
+/(x|y|z)(1|2|3|4)9/
+/(x|y|z)(1|2|3|4|)9/
+
+# complex stuff with *
+#problematic
+/(1|2|3)(a|b|c|d||(1|2|3)*)*789/A
+#non-problematic
+/(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+
+#problematic
+/123(a|b|c|d||(1|2|3)*)*789/A
+#non-problematic
+/123(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+
+/123(a|b|c|d|)|(1|2|3)*789/
+
+#reverse the 1st rex:
+#problematic
+/987(a|b|c|d||(1|2|3)*)*(1|2|3)/A
+#non-problematic
+/987(a|b|c|d|(1|2|3)(1|2|3)*)*(1|2|3)/A
+
+#duplicate the 1st rex:
+#problematic
+/(1|2|3)(a|b|c|d||(1|2|3)*)*789|(1|2|3)(a|b|c|d||(1|2|3)*)*789/A
+#non-problematic
+/(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789|(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789/A
+#... and star
+#problematic
+/((1|2|3)(a|b|c|d||(1|2|3)*)*789|(1|2|3)(a|b|c|d||(1|2|3)*)*789)*/A
+#non-problematic
+/((1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789|(1|2|3)(a|b|c|d|(1|2|3)(1|2|3)*)*789)*/A
+
+/2(1|3|4)*/
+
+#use . This takes a long time if TREX_EXPAND_DOTS is used
+/(1|2|3)...789/
+/.*x......../
+
+/12+/
+
+/1{0,3}/
+/1{1,3}/
+/1{2,3}/
+/1{3}/
+
+/(b|3(1|3)*)*/A
+/((1|2)(a|b)*)*/
+
+/(|1)/
+/2*/
+/1|(2*|3)/
+
+#test modifiers: i
+/(a|b|CDE)(a|b|CDE)?/
+/(a|b|CDE)(a|b|CDE)?/i
+/[a-c][a-c]?/
+/[a-c][a-c]?/i
+/(a|b|CDE).+(a|b|CDE)?/
+/(a|b|CDE).+(a|b|CDE)?/i
+/[a-c].+[a-c]?/
+/[a-c].+[a-c]?/i
+
+#test modifiers: t (next is 43)
+/(a|b|CDE)(a|b|CDE)?/t
+/[a-c][a-c]?/t
+/(a|b|CDE).+(a|b|CDE)?/t
+/[a-c].+[a-c]?/t
+
+#test modifiers: it (next is 47)
+/(a|b|CDE)(a|b|CDE)?/it
+/[a-c][a-c]?/it
+/(a|b|CDE).+(a|b|CDE)?/it
+/[a-c].+[a-c]?/it
+
+#TBD: (1) verify this against another DFA library
+#TBD: (2) haven't tried the 'm' modifer
