@@ -4,6 +4,7 @@ lib/ contains a library for Research work using Finite Automata (RFA)
      for:
      (1) pattern matching,
      (2) ranking / language counting for formatted encryption
+     (3) generating random elements in a language
 
 
 Build instructions:
