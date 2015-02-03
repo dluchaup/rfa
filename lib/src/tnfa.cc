@@ -490,7 +490,6 @@ dfa_tab_t* stateNFA::make_dfa_prev(unsigned int accept_id) {
     }
   }
   dt->stat = NULL;
-  dt->sink = NULL;
   dt->acc = new int *[dt->num_states];
 
   unsigned int dbg_num_accepting = 0;
@@ -634,7 +633,6 @@ dfa_tab_t* stateNFA::make_dfa(unsigned int accept_id, dfa_tab_t *dt) {
     }
   }
   dt->stat = NULL;
-  dt->sink = NULL;
   dt->acc = new int *[dt->num_states];
 
 
@@ -763,7 +761,6 @@ dfa_tab_t* stateNFA::make_dfa_clean(unsigned int accept_id) {
     }
   }
   dt->stat = NULL;
-  dt->sink = NULL;
   dt->acc = new int *[dt->num_states];
 
   unsigned int dbg_num_accepting = 0;

@@ -27,7 +27,42 @@
 class stateNFA;
 
 class trex;
+class trex_epsilon;
 class trex_byte;
+class trex_byte_set;
+class trex_disjunction;
+class trex_conjunction;
+class trex_range;
+class trex_plus;
+
+
+/********** Visitor *****************************/
+class TrexVisitor {
+  virtual void accept(class TrexPrePostVisitor *visitor) const = 0;
+};
+
+class TrexPrePostVisitor {
+  public:
+  /*pre-order */
+  virtual void pre_visit(const trex_epsilon* ) = 0;
+  virtual void pre_visit(const trex_byte* ) = 0;
+  virtual void pre_visit(const trex_byte_set* ) = 0;
+  virtual void pre_visit(const trex_disjunction* ) = 0;
+  virtual void pre_visit(const trex_conjunction* ) = 0;
+  virtual void pre_visit(const trex_range* ) = 0;
+  virtual void pre_visit(const trex_plus* ) = 0;
+  
+  /*post-order*/
+  virtual void post_visit(const trex_epsilon* ) = 0;
+  virtual void post_visit(const trex_byte* ) = 0;
+  virtual void post_visit(const trex_byte_set* ) = 0;
+  virtual void post_visit(const trex_disjunction* ) = 0;
+  virtual void post_visit(const trex_conjunction* ) = 0;
+  virtual void post_visit(const trex_range* ) = 0;
+  virtual void post_visit(const trex_plus* ) = 0;
+  
+};
+
 
 /********** trex kind ***************************/
 enum rex_kind {
@@ -42,7 +77,7 @@ enum rex_kind {
 };
 
 /********** trex (base class) *******************/
-class trex: public uidObject {
+class trex: public uidObject, public TrexVisitor {
 public:
   unsigned int length_max; //max. length of an element of this type
   bool bounded() { return length_max <	_INFINITY; }
@@ -94,6 +129,7 @@ public:
 
   virtual const std::vector<unsigned int>& get_chars()
   { assert(0); static std::vector<unsigned int> dummy; return dummy; }
+  void accept(class TrexPrePostVisitor *visitor) const = 0;
 private:
   trex(trex&);
   trex& operator=(const trex & T);
@@ -113,6 +149,10 @@ public:
   bool generates_epsilon() {return true;}
   virtual bool problematic() {return false;}
 
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    visitor->post_visit(this);
+  }
 private:
   virtual const MPInt& num_matches(unsigned int len) {
     if (len == 0)
@@ -158,6 +198,10 @@ public:
   virtual unsigned int rank(t_term c) {assert(c==b); return 0;}
   virtual t_term unrank(const MPInt& rank) {assert(rank==0);return b;}
   virtual const std::vector<unsigned int>& get_chars() { return v_chars; }
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    visitor->post_visit(this);
+  }
 private:
   virtual const MPInt& num_matches(unsigned int len) {
     if (len == 1)
@@ -204,6 +248,10 @@ public:
     }
     return v_chars;
   }
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    visitor->post_visit(this);
+  }
 private:
   virtual const MPInt& num_matches(unsigned int len) {
     if (len == 1)
@@ -240,6 +288,12 @@ public:
   virtual bool has_plus() {return left->has_plus()||right->has_plus();}
   bool generates_epsilon() {return left->generates_epsilon() || right->generates_epsilon();}
   bool problematic() {return left->problematic() || right->problematic();}
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    left->accept(visitor);
+    right->accept(visitor);
+    visitor->post_visit(this);
+  }
 private:
   virtual void update_matches(unsigned int len);
 };
@@ -275,6 +329,12 @@ public:
   virtual bool has_plus() {return left->has_plus()||right->has_plus();}
   bool generates_epsilon() {return left->generates_epsilon() && right->generates_epsilon();}
   bool problematic() {return left->problematic() || right->problematic();}
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    left->accept(visitor);
+    right->accept(visitor);
+    visitor->post_visit(this);
+  }
 private:
   virtual void update_matches(unsigned int len);
 };
@@ -307,6 +367,11 @@ public:
   virtual bool has_plus() {return tr->has_plus();}
   bool generates_epsilon() {return tr->generates_epsilon();}
   bool problematic() {return tr->problematic(); }
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    tr->accept(visitor);
+    visitor->post_visit(this);
+  }
 private:
   virtual void update_matches(unsigned int ) {assert(0&&"NOT IMPLEMENTED");}
 };
@@ -339,6 +404,11 @@ public:
   virtual bool has_plus() {return true;}
   bool generates_epsilon() {return tr->generates_epsilon();}
   bool problematic() {return tr->generates_epsilon() || tr->problematic();}
+  void accept(class TrexPrePostVisitor *visitor) const {
+    visitor->pre_visit(this);
+    tr->accept(visitor);
+    visitor->post_visit(this);
+  }
 private:
   virtual void update_matches(unsigned int len);
 };

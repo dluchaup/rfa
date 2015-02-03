@@ -1,0 +1,13 @@
+%LEX
+%%
+"int" return INT;
+[a-zA-Z]([a-zA-Z])* return ID;
+[=+()] return yytext[0];
+%%
+%YACC
+%token ID INT
+%%
+D : INT ID '=' E
+E : ID
+  | E '+' '(' E ')'
+%%

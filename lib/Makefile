@@ -33,18 +33,15 @@ CFLAGS = -g $(MAYBESTATIC) ${SVN_INFO} -frecord-gcc-switches -Wextra -Wall $(GPR
 CC   = g++ ${CFLAGS} -O3 # -D_GLIBCXX_DEBUG
 LD   = g++ $(MAYBESTATIC) $(GPROF)
 
-REXRANKSRCS=dfa_tab_t.cc dbg.cc \
-	utils.cc trex.cc tnfa.cc ranker.cc \
-	ffa.cc trex_dbg.cc MPInt.cc zoptions.cc
+REXRANKSRCS=$(shell ls src/*.cc) ${BIN}/pcre_lex.cc ${BIN}/pcre_parse.cc
 
-REXPARSESRCS=parse_utils.cc pcre_parse.cc pcre_lex.cc \
-	nodes.cc globals.cc errmsg.cc \
-	escape_sequences.cc
+FYIREXPARSESRCS= ${BIN}/pcre_lex.cc ${BIN}/pcre_parse.cc \
+	parse_utils.cc nodes.cc globals.cc errmsg.cc escape_sequences.cc
 
-LIBSRCS0=${REXRANKSRCS} ${REXPARSESRCS} zoptions.cc
-LIBSRCS=$(addprefix ${BIN}/, ${LIBSRCS0})
 
-LIBOBJS=${LIBSRCS:.cc=.o}
+LIBSRCS=$(shell ls src/*.cc) ${BIN}/pcre_lex.cc ${BIN}/pcre_parse.cc
+TEMPOBJS=${LIBSRCS:.cc=.o}
+LIBOBJS=$(subst  src/, ${BIN}/, $(TEMPOBJS))
 
 YACCFILES=pcre.y
 LEXFILES=pcre.l
@@ -74,7 +71,7 @@ all:	${BIN} ${MAKEFILENAME} ${BIN}/rank.a
 
 tests:
 	@ make -f ${MAKEFILENAME} -j10 BIN=${BIN} && \
-	  make -s -C test
+	  make -s -C ../tools/rex-intersect && make -s -C test
 
 ${BIN}:
 	mkdir ${BIN}
@@ -97,7 +94,8 @@ srcs:
 	@echo ${LIBSRCS} pcre.l pcre.y
 
 depend:
-	makedepend -- $(CFLAGS) -- -Y $(LIBSRCS)
+	makedepend -- $(CFLAGS) -- -Y $(LIBSRCS) &&\
+	cat Makefile| awk '/^# DO NOT DELETE/{after=1;}{if (after==1){sub(/^src\//,"bin/");}; print}' > Makefile.tmp && mv Makefile.tmp Makefile
 
 ${BIN}/pcre_lex.cc:	${SRC}/pcre.l ${BIN}/pcre_parse.hh ${INCLUDE}/escape_sequences.h
 ${BIN}/pcre_parse.cc:	${SRC}/pcre.y ${INCLUDE}/nodes.h ${INCLUDE}/errmsg.h
@@ -106,7 +104,9 @@ clean:
 	@rm -f ${BIN}/*
 
 cleanall: clean
-	@rmdir bin && make -C test cleanall
+	@rmdir bin && make -C test cleanall \
+	&& make -C ../tools/rex-intersect clean \
+	&& make -C ../tools/build-rex-dfas clean
 
 
 new:
@@ -118,5 +118,53 @@ new:
 
 mod:
 	@svn diff | grep -e '^Index' | awk '{print $$2}'
+# DO NOT DELETE
 
-
+bin/dbg.o: include/dbg.h
+bin/dfa_tab_t.o: include/dfa_tab_t.h include/utils.h include/dbg.h
+bin/dfa_tab_t.o: include/trex.h include/uidObject.h include/alphabet_byte.h
+bin/dfa_tab_t.o: include/MPInt.h include/tnfa.h include/MyTime.h
+bin/escape_sequences.o: include/escape_sequences.h include/errmsg.h
+bin/ffa.o: include/ffa.h include/ranker.h include/trex.h include/uidObject.h
+bin/ffa.o: include/alphabet_byte.h include/MPInt.h include/tnfa.h
+bin/ffa.o: include/utils.h include/MyTime.h include/dfa_tab_t.h include/dbg.h
+bin/ffa.o: include/escape_sequences.h
+bin/globals.o: include/globals.h include/alphabet_byte.h
+bin/gram.o: include/gram.h include/MPInt.h include/ranker.h include/trex.h
+bin/gram.o: include/uidObject.h include/alphabet_byte.h include/tnfa.h
+bin/gram.o: include/utils.h include/MyTime.h include/dfa_tab_t.h
+bin/gram.o: include/dbg.h
+bin/gram_tests.o: include/gram.h include/MPInt.h include/ranker.h
+bin/gram_tests.o: include/trex.h include/uidObject.h include/alphabet_byte.h
+bin/gram_tests.o: include/tnfa.h include/utils.h include/MyTime.h
+bin/gram_tests.o: include/dfa_tab_t.h
+bin/MPInt.o: include/MPInt.h
+bin/nodes.o: include/nodes.h include/escape_sequences.h include/globals.h
+bin/nodes.o: include/alphabet_byte.h include/trex.h include/uidObject.h
+bin/nodes.o: include/MPInt.h include/zoptions.h include/MyTime.h
+bin/nodes.o: include/parse_utils.h
+bin/parse_utils.o: include/nodes.h include/parse_utils.h include/globals.h
+bin/parse_utils.o: include/alphabet_byte.h
+bin/ranker.o: include/zoptions.h include/ranker.h include/trex.h
+bin/ranker.o: include/uidObject.h include/alphabet_byte.h include/MPInt.h
+bin/ranker.o: include/tnfa.h include/utils.h include/MyTime.h
+bin/ranker.o: include/dfa_tab_t.h include/escape_sequences.h include/dbg.h
+bin/ranker.o: include/MemoryInfo.h
+bin/tnfa.o: include/tnfa.h include/trex.h include/uidObject.h
+bin/tnfa.o: include/alphabet_byte.h include/MPInt.h include/utils.h
+bin/tnfa.o: include/MyTime.h include/escape_sequences.h include/ranker.h
+bin/tnfa.o: include/dfa_tab_t.h include/dbg.h include/zoptions.h
+bin/trex.o: include/trex.h include/uidObject.h include/alphabet_byte.h
+bin/trex.o: include/MPInt.h include/tnfa.h include/utils.h include/MyTime.h
+bin/trex_dbg.o: include/trex.h include/uidObject.h include/alphabet_byte.h
+bin/trex_dbg.o: include/MPInt.h include/escape_sequences.h include/dbg.h
+bin/trex_tests.o: include/trex.h include/uidObject.h include/alphabet_byte.h
+bin/trex_tests.o: include/MPInt.h include/tnfa.h include/utils.h
+bin/trex_tests.o: include/MyTime.h include/ranker.h include/dfa_tab_t.h
+bin/trex_tests.o: include/ffa.h include/zoptions.h include/dbg.h
+bin/trex_tests.o: include/MemoryInfo.h
+bin/utils.o: include/utils.h
+bin/zoptions.o: include/zoptions.h
+bin/pcre_lex.o: bin/pcre_parse.hh include/escape_sequences.h include/nodes.h
+bin/pcre_parse.o: include/errmsg.h include/nodes.h include/globals.h
+bin/pcre_parse.o: include/alphabet_byte.h

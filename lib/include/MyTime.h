@@ -93,10 +93,9 @@ public:
   }
   void print(const std::string& msg) {
     if (last_lap)
-      std::cout << "Timer: " << ((double)last_lap)/CPUHZ << " of " << ((double)total)/CPUHZ << " s? " << name << " # " << msg << " "  << total << " : " << ((double)total)/CPUHZ << " s?" << std::endl;
+      std::cout << "Timer: " << name << " # " << msg << " : "  << ((double)last_lap)/CPUHZ << " of " << ((double)total)/CPUHZ << " s? i.e. " << last_lap << " of " << total << std::endl;
     else
-      std::cout << "Timer: " << ((double)total)/CPUHZ << " s? " << name << " # " << msg << " "  << total << " : " << ((double)total)/CPUHZ << " s?" << std::endl;
-    //DMP(last_start); DMP(last_end); DMP(last_end - last_start) << std::endl;
+      std::cout << "Timer: " << name << " # " << msg << " : "  << ((double)total)/CPUHZ << " s? i.e. " <<  total << std::endl;
   }
   ~MyTime() {
     last_end = new_rdtsc();

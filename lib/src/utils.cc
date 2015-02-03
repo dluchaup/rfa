@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "utils.h"
+#include "dbg.h"
 
 
 void chomp(std::string &str) {
@@ -35,10 +36,11 @@ void pin_processors() {
 	perror("sched_getaffinity");
 	exit(1);
     }
-    assert(sizeof(long unsigned int) == sizeof(mask)); // for printf
-    printf("my affinity mask is: %08lx\n", (*((long unsigned int*)&mask)));
+    //DMP(sizeof(long unsigned int)); DMPNL(sizeof(mask)); // for printf
+    //assert(sizeof(long unsigned int) == sizeof(mask)); // for printf
+    //printf("my affinity mask is: %08lx\n", (*((long unsigned int*)&mask)));
     CPU_CLR(1, &mask);
-    printf("Trying to change my affinity mask to: %08lx\n", (*((long unsigned int*)&mask)));
+    //printf("Trying to change my affinity mask to: %08lx\n", (*((long unsigned int*)&mask)));
     if (sched_setaffinity(0, len, &mask) < 0) {
 	perror("sched_setaffinity");
 	exit(1);

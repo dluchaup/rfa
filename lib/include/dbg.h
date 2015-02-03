@@ -25,7 +25,8 @@
 /*****************************************************************************/
 #define DMP(x) std::cout << #x << "= " << (x) << " "
 #define DMPNL(x) std::cout << #x << "= " << (x) << "\n"
-#define DMPC(x) std::cout << #x << "= " << (dumpContainer(x,""), ".") << " "
+#define DMPC(x) do {std::cout << #x << "= "; \
+    dumpContainer(x,"");  std::cout << "." << " "; }while(false)
 
 #ifdef VERBOSE_DMP
 #define dbgDMP(x) DMP(x)

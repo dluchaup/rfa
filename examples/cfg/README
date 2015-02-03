@@ -1,0 +1,97 @@
+///////////////////////////////////////////////////////////////////////////////
+ex1:
+-lex and yacc
+-grammar is:
+  r0: S  -> ( Id )
+  r1: S  -> ( Id + S)
+  r2: Id -> x
+  r3: Id -> y
+
+///////////////////////////////////////////////////////////////////////////////
+
+ex2:
+-lex and yacc
+-grammar is:
+ * r00: L -> S
+ * r01: L -> S L
+ * r0: S  -> ( Exp )
+ * r1: S  -> ( Exp + S)
+ * r2: Exp -> IDENTIFIER
+ * r3: Exp -> Num
+ * r4: Num -> INT
+ * r5: Num -> FLOAT
+ * *** lexical rules ***
+ * r6: IDENTIFIER -> {L}({L}|{D})*
+ * r7: INT -> 0[xX]{H}+
+ * r8: INT -> {D}+
+ * r9: FLOAT -> {D}*"."{D}+
+ * r10:FLOAT -> {D}+"."{D}*
+
+The grammar is ambiguous, because of r9 and r10.
+There is commented code for an unambiguous version, which uses:
+//Non-ambiguous alternative to rules 9/10:
+({D}*"."{D}+|{D}+"."{D}*)  {
+  yylval._LParseTree = new LRule::LParseTree(g_exG->r9, strndup(yytext, yyleng), yyleng);
+  return _FLOAT;
+ }
+
+///////////////////////////////////////////////////////////////////////////////
+ex3:
+-lex and yacc
+-grammar is:
+ * r0: L -> T T T T T T T T T T
+ * r1: T -> .{100}
+
+///////////////////////////////////////////////////////////////////////////////
+
+ex4:
+-yacc NO lex
+-same grammar as ex3, but uses hand written lexer.
+ * r0: L -> T T T T T T T T T T
+ * r1: T -> .{100}
+
+///////////////////////////////////////////////////////////////////////////////
+
+ex5:
+-lex and yacc
+-grammar is:
+ * r0: L -> '12' T '3' F '4'
+ * r1: T -> [^3]*
+ * r2: F -> [^4]*
+ 
+///////////////////////////////////////////////////////////////////////////////
+
+The directories C99, C99_2 and GD contain the tests as described in (1)
+(1) Daniel Luchaup, Thomas Shrimpton, Thomas Ristenpart, Somesh Jha
+    "Formatted Encryption beyond Regular Languages"
+    21st ACM Conference on Computer and Communications Security (ACM CCS 2014)
+
+In each directory, one can build an executable bin/exG.
+To run the tests, use either:
+  (a) bin/exG -zpure_memoization -zmax_slice:MAX
+      This will test only the memoization time/space, performed once for slice=MAX
+  (b) bin/exG -zmax_slice:MAX
+      This will test the rankin/unranking time and ambiguity at 100 bytes
+      interval till slice=MAX. The memoization space and time is also reported,
+      but the space will be slihgtly not accurate, because the memoization
+      arrays are pre-allocaded, and filled in incrementally.
+
+The C99, C99_2 and GD dirrectories differ only in the grammar file in src/.
+The grammar file is used to generate code for tree ranking and parser using
+the tool tools/util/cfg2ranker.pl. 
+
+Although the type rank_cfg in lib/include/rank_cfg.h provides relaxed rank and
+unrank functions, however inside the testing functions test_unrank_rank and
+random_test_unrank_rank, we don't use these functions dirrectly, but rather
+some equivalent code. For instance to time relaxed ranking time we perform:
+  MyTime tm_RRank(":RRank"+tag, false);
+  ...
+  tm_RRank.resume(); tm_pt_from_mem.resume();
+  GRule::GParseTree *pt = static_cast<GRule::GParseTree*>(pRankCFG->pi->pt_from_mem(yield));
+  tm_pt_from_mem.stop();tm_RRank.stop();
+
+  tm_RRank.resume();tm_rank.resume();
+  MPInt r = S->rank(pt);
+  tm_rank.stop();tm_RRank.stop();
+  delete pt;
+[this is legacy from debugging days, and I'll clean it...]

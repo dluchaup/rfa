@@ -106,23 +106,6 @@ int dfa_tab_t::num_accept_ids(state_id_t s) {
   return num;
 }
 
-int num_accept_ids(int *acc) {
-  int num = 0;
-  if (acc) {
-    for (int *ptr = acc;  (*ptr) != -1;  ++ptr) {// OLD STYLE
-      //cout << *ptr << endl;
-      assert(*ptr > 0);
-      num++;
-    }
-  }
-  return num;
-}
-void dfa_tab_t::gather_accept_ids(state_id_t s, set<int> & accept_ids) const {
-  for (const int* p = acc[s]; p && *p != -1; ++p) {// OLD STYLE
-    accept_ids.insert(*p);
-  }
-}
-
 int* dfa_tab_t::clone_accept_ids(state_id_t s) {
   int *res = NULL;
   int num = num_accept_ids(s);
@@ -138,110 +121,96 @@ int* dfa_tab_t::clone_accept_ids(state_id_t s) {
   return res;
 }
 
-int* clone_accept_ids(int* acc) {
-  int *res = NULL;
-  int num = num_accept_ids(acc);
-  if (num) {
-    res = new int[num + 1];
-    int i;
-    for (i = 0; i < num; ++i) {// OLD STYLE
-      res[i] = acc[i];
-    }
-    assert(acc[i] == -1); // OLD STYLE
-    res[i] = acc[i]; // == -1 OLD STYLE
-  }
-  return res;
-}
+bool dfa_tab_t::bin_dfa_load(const char *filename) {
+ /*
+   dfa_tab_t::dump "incorrectly"(?) saves the 'acc' pointer array. This only
+   tells whether a state is accepting or not, which is OK if the DFA is not
+   a Moore DFA. For Moore DFAs, dumping and loading should also account for
+   the content of the 'acc', which should be saved and restored properly.
+   In the OLD STYLE the acc array ends with a sentinel element equal to -1.
+  */
+ assert(0&&"THIS IS NOT COMPATIBLE with new dfa_tab_t->acc");
+ int ifd;
 
-/* Expects a file in the same format as DFA_load, except that it doesn't have
-   to have the states sorted, and reads it dirrectly in a table.
-*/
-bool dfa_tab_t::DFAload(const char *filename) {
-  FILE *in = NULL;
   if (filename && filename[0]) {
-    in = fopen(filename, "r");
-    if (in == NULL) {
+    ifd = open(filename, O_RDONLY);
+    if (ifd == -1) {
       fprintf(stdout, "ERROR:  could not open file %s for reading.\n"
 	      "Reason: %s\n", filename, strerror(errno));
+      exit(1);
       return false;
     }
   } else
     return false;
-   
-  /* number of states. start state */
-  state_id_t size;
-  state_id_t start;
-  assert(fscanf(in, "Number of states:%u. Start state:%u\n",
-		&size, &start) == 2);
-
-  this->num_states = size;
-  this->start = start;
-  this->acc = new int *[size];
-  this->tab = new unsigned int [size*MAX_SYMS];
-#define ACCEPT_PTR_HACK (new int[1])//((int*)0x1)
   
-#ifdef STATS
-   this->stat = new unsigned long long [size];
-   for (unsigned int i=0; i<size; ++i)
-      this->stat[i]=0;
-#else
-   this->stat = NULL;
-#endif
-   //this->sink = new int[size];
-   this->sink = NULL;//for now...
-
-   for (unsigned int i=0; i < size; i++) {
-     this->acc[i] = NULL;
-     if (this->sink) this->sink[i] = 0;
-   }
+  if (acc)
+    delete[]acc;
+  if (tab)
+    delete[]tab;
   
-   /* transitions */
-   for (unsigned int i=0; i < size; i++) {
-      char next_c;
-      state_id_t src;
-      
-      assert(fscanf(in, "state%u", &src) == 1);
-      assert(src < size);
-      next_c = fgetc(in);
-      if (next_c != ':') {
-	 set<int> accept_id;
-	 assert(next_c == ' ');
-	 consume(in, "a(");
-	 //this->acc[src] = ACCEPT_PTR_HACK; this->acc[src][0]=-1;
-	 int id;
-	 while (fscanf(in, "%d ", &id) > 0)
-	   accept_id.insert(id);
-	 consume(in, "):");
-	 this->acc[src] = new int[accept_id.size()+1];//OLD STYLE
-	 copy(accept_id.begin(), accept_id.end(),this->acc[src]);
-	 this->acc[src][accept_id.size()] = -1;//OLD STYLE
-      }
-      
-      /* destinations */
-      for (unsigned int c=0; c < MAX_SYMS; c++) {
-	 unsigned dst = 0;
-	 if (c > 0)
-	    consume(in, ",");
-	 assert(fscanf(in, "%u", &dst) > 0);
-	 assert(dst < size);
-	 //result_dfa->states[src].trans[c].push_back(dst);
-	 ARR(this->tab, src, c) = dst;
-      }
-      consume(in, "\n");
-   }
-   if (fscanf(in, "id:%u", &(this->machine_id)) == 1) {
-     //machine id was not always there, for older dumps ... 
-     ;
-   }
-   this->filename = filename;
-   fclose (in);
-   dbgCheck(this);
-   return true;
+  assert(read(ifd, &num_states, sizeof(num_states)) == sizeof(num_states));
+  assert(read(ifd, &start, sizeof(start)) == sizeof(start));
+  this->acc = new int *[num_states];
+  assert((size_t)read(ifd, acc, (num_states *sizeof(*acc)))
+	 == (num_states *sizeof(*acc)));
+  this->tab = new unsigned int [num_states*MAX_SYMS];
+  assert((size_t)read(ifd, tab, ((num_states*MAX_SYMS)*sizeof(*tab)))
+	 == ((num_states*MAX_SYMS)*sizeof(*tab)));
+  close(ifd);
+  return true;
 }
+
+bool dfa_dump(const dfa_tab_t *dt, const char *filename, const char *kind) {
+  if (kind) {
+    if (strcmp(kind,"bin"))
+      return dt->bin_dfa_dump(filename);
+    else if (strcmp(kind,"txt"))
+      return dt->txt_dfa_dump(filename);
+    fprintf(stderr, "Incorrect dump kind %s!\n", kind);
+  } else {
+    fprintf(stderr, "dump kind unspecified");
+  }
+  assert(false);
+  return false;
+}
+
+void dbgCheck(dfa_tab_t *dt, const char *msg) {
+  return;
+  assert(dt);
+  if (msg) cout << endl << dt << " : " << msg << " num_states=" << dt->num_states << " ";  cout.flush();
+  assert(dt->num_states > 0);
+  for (unsigned int i=0; i < dt->num_states; i++) {
+    assert(dt->acc);
+    if (dt->acc[i]) {
+      //DMP(dt->acc[i]);
+      assert(dt->acc[i] != (void*)-1);
+      assert(dt->acc[i] != (void*)0x1);
+      assert(dt->acc[i][0] != -1);//no ACCEPT_PTR_HACK
+      for (int *ptr = dt->acc[i];  (*ptr) != -1;  ++ptr) {//OLD STYLE
+	//(cout << " i= " << i << " ptr - acc[i] = " << (ptr - dt->acc[i]) ).flush();
+	//(cout << " ptr = " << ptr).flush();
+	//cout << " *ptr= " << *ptr << endl; cout.flush();
+	if (*ptr <= 0)  {DMP(ptr - dt->acc[i]); DMP(*ptr);DMP(i);}
+	assert(*ptr > 0);
+	
+	if (0) // if check for order
+	  if (ptr > dt->acc[i]) { assert(ptr[-1] < ptr[0]); }
+	
+	//cout << " next ptr ..."; cout.flush();
+      }
+      //cout << " done " << i << " "; cout.flush();
+    }
+  }
+  //cout << " OK \n"; cout.flush();
+}
+#endif
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-bool dfa_tab_t::HACK_dfa_dump(const char *filename) { // MAJOR HACK!!! THIS WAS CUT&PASTE from nfa_t::dfa_dump(const char *filename)
+bool dfa_tab_t::txt_dfa_dump(const char *filename) {
+  static DbgTime tm("dfa_tab_t::txt_dfa_dump", false);
+  tm.resume();
   dbgCheck(this);
    FILE *out = NULL;
    if (filename && filename[0]) {
@@ -290,9 +259,14 @@ bool dfa_tab_t::HACK_dfa_dump(const char *filename) { // MAJOR HACK!!! THIS WAS 
    fprintf(out, "id:%u", machine_id);
    fclose (out);
    printf("DBG: Done Dumping DFA to %s\n", filename);fflush(0);
+   tm.stop();
+
+   //bin_dfa_dump((string(filename)+"bin").c_str());
    return true;
 }
-bool dfa_tab_t::dump(const char *filename) {
+bool dfa_tab_t::bin_dfa_dump(const char *filename) {
+  static DbgTime tm("dfa_tab_t::bin_dfa_dump", false);
+  tm.resume();
   int ofd;
 
   if (filename && filename[0]) {
@@ -315,74 +289,98 @@ bool dfa_tab_t::dump(const char *filename) {
   return true;
 }
 
-bool dfa_tab_t::load(const char *filename) {
- /*
-   dfa_tab_t::dump "incorrectly"(?) saves the 'acc' pointer array. This only
-   tells whether a state is accepting or not, which is OK if the DFA is not
-   a Moore DFA. For Moore DFAs, dumping and loading should also account for
-   the content of the 'acc', which should be saved and restored properly.
-   In the OLD STYLE the acc array ends with a sentinel element equal to -1.
-  */
- assert(0&&"THIS IS NOT COMPATIBLE with new dfa_tab_t->acc");
- int ifd;
 
+static void consume(FILE *in, const char* token) {
+   assert(token);
+   while (*token)
+      assert(*token++ == fgetc(in));
+}
+
+bool dfa_tab_t::txt_dfa_load(const char *filename) {
+  static MyTime tm("dfa_tab_t::txt_dfa_load", false);
+  tm.resume();
+  FILE *in = NULL;
   if (filename && filename[0]) {
-    ifd = open(filename, O_RDONLY);
-    if (ifd == -1) {
+    in = fopen(filename, "r");
+    if (in == NULL) {
       fprintf(stdout, "ERROR:  could not open file %s for reading.\n"
 	      "Reason: %s\n", filename, strerror(errno));
-      exit(1);
       return false;
     }
   } else
     return false;
+   
+  /* number of states. start state */
+  state_id_t size;
+  state_id_t start;
+  assert(fscanf(in, "Number of states:%u. Start state:%u\n",
+		&size, &start) == 2);
+
+  this->num_states = size;
+  this->start = start;
+  this->acc = new int *[size];
+  this->tab = new unsigned int [size*MAX_SYMS];
+#define ACCEPT_PTR_HACK (new int[1])//((int*)0x1)
   
-  if (acc)
-    delete[]acc;
-  if (tab)
-    delete[]tab;
-  
-  assert(read(ifd, &num_states, sizeof(num_states)) == sizeof(num_states));
-  assert(read(ifd, &start, sizeof(start)) == sizeof(start));
-  this->acc = new int *[num_states];
-  assert((size_t)read(ifd, acc, (num_states *sizeof(*acc)))
-	 == (num_states *sizeof(*acc)));
-  this->tab = new unsigned int [num_states*MAX_SYMS];
-  assert((size_t)read(ifd, tab, ((num_states*MAX_SYMS)*sizeof(*tab)))
-	 == ((num_states*MAX_SYMS)*sizeof(*tab)));
-  close(ifd);
-  return true;
-}
-void dbgCheck(dfa_tab_t *dt, const char *msg) {
-  return;
-  assert(dt);
-  if (msg) cout << endl << dt << " : " << msg << " num_states=" << dt->num_states << " ";  cout.flush();
-  assert(dt->num_states > 0);
-  for (unsigned int i=0; i < dt->num_states; i++) {
-    assert(dt->acc);
-    if (dt->acc[i]) {
-      //DMP(dt->acc[i]);
-      assert(dt->acc[i] != (void*)-1);
-      assert(dt->acc[i] != (void*)0x1);
-      assert(dt->acc[i][0] != -1);//no ACCEPT_PTR_HACK
-      for (int *ptr = dt->acc[i];  (*ptr) != -1;  ++ptr) {//OLD STYLE
-	//(cout << " i= " << i << " ptr - acc[i] = " << (ptr - dt->acc[i]) ).flush();
-	//(cout << " ptr = " << ptr).flush();
-	//cout << " *ptr= " << *ptr << endl; cout.flush();
-	if (*ptr <= 0)  {DMP(ptr - dt->acc[i]); DMP(*ptr);DMP(i);}
-	assert(*ptr > 0);
-	
-	if (0) // if check for order
-	  if (ptr > dt->acc[i]) { assert(ptr[-1] < ptr[0]); }
-	
-	//cout << " next ptr ..."; cout.flush();
-      }
-      //cout << " done " << i << " "; cout.flush();
-    }
-  }
-  //cout << " OK \n"; cout.flush();
-}
+#ifdef STATS
+   this->stat = new unsigned long long [size];
+   for (unsigned int i=0; i<size; ++i)
+      this->stat[i]=0;
+#else
+   this->stat = NULL;
 #endif
+   bool dbg_seen[size];
+
+   for (unsigned int i=0; i < size; i++) {
+     this->acc[i] = NULL;
+     dbg_seen[i] = false;
+   }
+  
+   /* transitions */
+   for (unsigned int i=0; i < size; i++) {
+      char next_c;
+      state_id_t src;
+      
+      assert(fscanf(in, "state%u", &src) == 1);
+      assert(src < size);
+      assert(dbg_seen[src] == false); dbg_seen[src] = true;
+      next_c = fgetc(in);
+      if (next_c != ':') {
+	 set<int> accept_id;
+	 assert(next_c == ' ');
+	 consume(in, "a(");
+	 //this->acc[src] = ACCEPT_PTR_HACK; this->acc[src][0]=-1;
+	 int id;
+	 while (fscanf(in, "%d ", &id) > 0)
+	   accept_id.insert(id);
+	 consume(in, "):");
+	 this->acc[src] = new int[accept_id.size()+1];//OLD STYLE
+	 copy(accept_id.begin(), accept_id.end(),this->acc[src]);
+	 this->acc[src][accept_id.size()] = -1;//OLD STYLE
+      }
+      
+      /* destinations */
+      for (unsigned int c=0; c < MAX_SYMS; c++) {
+	 unsigned dst = 0;
+	 if (c > 0)
+	    consume(in, ",");
+	 assert(fscanf(in, "%u", &dst) > 0);
+	 assert(dst < size);
+	 //result_dfa->states[src].trans[c].push_back(dst);
+	 ARR(this->tab, src, c) = dst;
+      }
+      consume(in, "\n");
+   }
+   if (fscanf(in, "id:%u", &(this->machine_id)) == 1) {
+     //machine id was not always there, for older dumps ... 
+     ;
+   }
+   this->filename = filename;
+   fclose (in);
+   dbgCheck(this);
+   tm.stop();
+   return true;
+}
 
 typedef state_id_t class_id_t;
 const class_id_t illegal_class = illegal_state;
@@ -703,18 +701,15 @@ void dfa_tab_t::cleanup(void)
    delete[] this->acc;//ok.checked
    this->acc = 0;
 
-   if (this->sink)   delete []this->sink;//ok.checked?
-   this->sink = 0;
-   
    this->num_states = 0;
    this->start = 0;
 }
 
-void dfa_tab_t::init(const char *rex) {
+void dfa_tab_t::init(const char *rex, unsigned int id) {
   trex *trx = regex2trex(rex, NULL, NULL);
   stateNFA *snfa = trx->toNFA(NULL);
   assert(snfa->is_root());
-  dfa_tab_t *tmp = snfa->make_dfa(1, this);
+  dfa_tab_t *tmp = snfa->make_dfa(id, this);
   assert(tmp == this);
   stateNFA::delete_all_reachable(snfa);
   delete trx;
@@ -899,6 +894,7 @@ static dfa_tab_t* combine(const dfa_tab_t* dt1, const dfa_tab_t* dt2,
   }
 
   //combined_dt->dfa2nfa2dotty("dot.combined_dt.new");
+  //DMPNL(combined_dt->num_states);
   return combined_dt;
 }
 
@@ -984,9 +980,9 @@ static void merge_sorted_accept_ids(int* &acc_dest, // OLD STYLE
 
 /* Get a new DFA which accepts the union of dt1 and dt2's languages        */
 dfa_tab_t* dt_union(const dfa_tab_t* dt1, const dfa_tab_t* dt2,
-		    unsigned int max_states) {
+		    unsigned int max_states, bool minimize) {
   dfa_tab_t * res = combine(dt1, dt2, max_states, CK_UNION);
-  if (res)
+  if (minimize && (res != NULL))
     res->minimize();
   return res;
 }
@@ -1067,5 +1063,143 @@ void dt_negate  (dfa_tab_t* dt) {
       delete[] dt->acc[s];
       dt->acc[s] = NULL;
     }
+  }
+}
+
+/*****************************************************************************/
+void dfa_tab_t::gather_accept_ids(state_id_t s, set<int> & accept_ids) const {
+  for (const int* p = acc[s]; p && *p != -1; ++p) {// OLD STYLE
+    accept_ids.insert(*p);
+  }
+}
+
+bool equalDfa(const dfa_tab_t * dfa1, const dfa_tab_t* dfa2) {
+  assert(dfa1 && dfa2);
+  state_id_t numStates1 = num_states(dfa1);
+  state_id_t numStates2 = num_states(dfa2);
+  if (numStates1 != numStates2) {
+    DMP(numStates1 != numStates2);
+    return false;
+  }
+  
+  map<state_id_t, state_id_t> statemap;
+  list<state_id_t> wlist;
+  statemap[dfa1->start] = dfa2->start;
+  wlist.push_back(dfa1->start);
+  
+  while(!wlist.empty()) {
+    state_id_t s1 = wlist.front(); wlist.pop_front();
+    assert(CONTAINS(statemap, s1));
+    state_id_t s2 = statemap[s1];
+    if (dfa1->is_accepting(s1) && dfa2->is_accepting(s2)) {
+      set<int> accept_id1;
+      dfa1->gather_accept_ids(s1, accept_id1);
+      set<int> accept_id2;
+      dfa2->gather_accept_ids(s2, accept_id2);
+      if (accept_id1 != accept_id2) {
+	cout << " Distinct accept_id! s1: " << s1 << " vs s2: " << s2 << endl;
+	dumpContainer(accept_id1, "accept_id1");
+	dumpContainer(accept_id2, "accept_id2");
+	return false;// Actually, I should ad an extra parameter 'bool isMoore", and here if (isMoore) return false
+      }
+    } else if (dfa1->is_accepting(s1) || dfa2->is_accepting(s2)) {
+      DMP(dfa1->is_accepting(s1) || dfa2->is_accepting(s2));
+      return false;
+    }
+
+    for (unsigned int c = 0; c < MAX_SYMS; ++c) {
+      state_id_t d1 = transition(s1, dfa1, c);
+      if (CONTAINS(statemap, d1)) {
+	if (statemap[d1] != transition(s2, dfa2, c)) {
+	  DMP(statemap[d1] != transition(s2, dfa2, c));
+	  return false;
+	}
+      } else {
+	statemap[d1] = transition(s2, dfa2, c);
+	wlist.push_back(d1);
+      }
+    }
+  }
+  { //More paranoic checks:
+    /* The mapping should be 1-to-1.
+       There may be alternative checks, where this assumption would not hold,
+       maybe the case where the DFAs represent the same language, but dfa1 is
+       not minimized. However, I haven't thought about such cases, and for now
+       the behavior to check for equivalence between two DFAs with the same
+       number of states, possibly in different order.
+    */
+    map<state_id_t, state_id_t> reverse_statemap;
+    for (map<state_id_t, state_id_t>::iterator it = statemap.begin();
+	 it != statemap.end();
+	 ++it) {
+      state_id_t s1 = it->first;
+      assert( s1 < numStates1 );
+      state_id_t s2 = it->second;
+      assert( s1 < numStates2 );
+      if (CONTAINS(reverse_statemap, s2)) {
+	state_id_t old_s = reverse_statemap[s2];
+	cout << " ERROR: reverse_statemap already contains"
+	     << " s2= " << s2
+	     << " old_s= " << old_s
+	     << " , new: s1= " << s1
+	     << endl;
+	return false;
+      } else {
+	reverse_statemap[s2] = s1;
+      }
+    }
+
+    if (statemap.size() != numStates1) {
+      cout << " ERROR: not all states of dfa1 were visited! ";
+      DMP(statemap.size()); DMP(numStates1) << endl;
+      return false;
+    }
+    
+    if (reverse_statemap.size() != numStates2) {
+      cout << " ERROR: not all states of dfa2 were visited! ";
+      DMP(reverse_statemap.size()); DMP(numStates2) << endl;
+      return false;
+    }
+    
+    cout << "DBG: equalDfa checked numStates: " << numStates1 << endl;
+  }
+  return true;
+}
+
+int num_accept_ids(int *acc) {
+  int num = 0;
+  if (acc) {
+    for (int *ptr = acc;  (*ptr) != -1;  ++ptr) {// OLD STYLE
+      assert(*ptr > 0);
+      num++;
+    }
+  }
+  return num;
+}
+
+int* clone_accept_ids(int* acc) {
+  int *res = NULL;
+  int num = num_accept_ids(acc);
+  if (num) {
+    res = new int[num + 1];
+    int i;
+    for (i = 0; i < num; ++i) {// OLD STYLE
+      res[i] = acc[i];
+    }
+    assert(acc[i] == -1); // OLD STYLE
+    res[i] = acc[i]; // == -1 OLD STYLE
+  }
+  return res;
+}
+
+void guarded_minimize(dfa_tab_t * &dt, state_id_t &lastMinNumberOfStates) {
+  if (minimMDFA)
+    return; //Theorem: combining minimized and disjoint Moore DFAs results in a minimized mdfa.
+  //cout << "guarded_minimize " << dt->num_states << " " << lastMinNumberOfStates << endl;
+  if (dt->num_states > lastMinNumberOfStates) {
+    unsigned int old = dt->num_states;
+    dt->minimize();
+    lastMinNumberOfStates = dt->num_states;
+    std::cout << "[min:"<<old<<":"<<lastMinNumberOfStates<<"]";
   }
 }

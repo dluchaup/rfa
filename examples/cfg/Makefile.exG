@@ -1,0 +1,127 @@
+##############################################################################
+# File:    Makefile
+# Author:  Daniel Luchaup
+# Date:    1 December 2013
+# Copyright 2007-2013 Daniel Luchaup luchaup@cs.wisc.edu
+#
+# This file contains unpublished confidential proprietary work of
+# Daniel Luchaup, Department of Computer Sciences, University of
+# Wisconsin--Madison.  No use of any sort, including execution, modification,
+# copying, storage, distribution, or reverse engineering is permitted without
+# the express written consent (for each kind of use) of Daniel Luchaup.
+#
+# History: based on legacy code of Randy Smith
+##############################################################################
+
+MAKEFILENAME=$(lastword $(MAKEFILE_LIST))
+EXGMAKEFILENAME=$(word 1, $(MAKEFILE_LIST))
+
+LIBRARIES =  pthread gmpxx gmp
+
+YACC=bison
+
+###############################################################################
+ifeq ($(EXG), )
+EXG=exG
+endif
+
+ifeq ($(LTROOT), )
+LTROOT = ../../../lib
+endif
+ifeq ($(LIBRANK), )
+LIBRANK = ${LTROOT}/bin/rank.a
+#LIBRANK = ${LTROOT}/bin-O3-verbose/rank.a
+endif
+
+SRC=src
+
+ifeq ($(BIN), )
+BIN=bin
+endif
+
+GPROF=#-pg
+#MAYBESTATIC = -static -static-libgcc
+
+CFLAGS = -g $(MAYBESTATIC) ${SVN_INFO} -frecord-gcc-switches -Wextra -Wall $(GPROF) -I${LTROOT}/include/ -I${BIN} -I${SRC} #-DVERBOSE_DMP -DVERBOSE_TIME #--save-temps
+CC   = g++ ${CFLAGS} -O3 # -D_GLIBCXX_DEBUG
+LD   = g++ $(MAYBESTATIC) $(GPROF)
+
+###############################################################################
+
+LIBS      = -L  $(patsubst %, -l%, $(LIBRARIES)) ${LIBRANK}
+
+YACCFILE=${EXG}.y
+LEXFILE=${EXG}.l
+
+###############################################################################
+EXGSRCS= ${EXG}_defs.cc ${EXG}_parse.cc ${EXG}_main.cc
+ifeq ($(shell ls ${SRC}/$(LEXFILE)), ${SRC}/${LEXFILE})
+EXGSRCS:= ${EXGSRCS} ${EXG}_lex.cc
+endif
+EXGOBJS=$(patsubst %, ${BIN}/%, ${EXGSRCS:.cc=.o} )
+
+###############################################################################
+###############################################################################
+ALLSRCS= ${EXGSRCS}
+###############################################################################
+${BIN}/%.o: ${SRC}/%.cc
+	$(CC) -o $@ -c $<
+
+${BIN}/%.o: ${BIN}/%.cc
+	$(CC) -o $@ -c $<
+
+# The following two rules assume that matching .y and .l files have the same
+# basename, such as pcre.y and pcre.l
+# That base name will be used as a prefix instead of yy.... For instance
+# for pcre.y instead of yylval we'll use pcre_lval (see nodes.h for this
+# particular case).
+# This is done so we can use mutiple parsers inside a program.
+${BIN}/%_parse.cc: ${SRC}/%.y
+	$(YACC) -p$(subst ${SRC}/,, $(patsubst %.y, %,$<))_ -v -d  -o $@ $<
+${BIN}/%_lex.cc: ${SRC}/%.l
+	lex -P$(subst ${SRC}/,, $(patsubst %.l,%,$<))_ -o$@ $<
+${BIN}/%_parse.hh: ${BIN}/%_parse.cc # (1)
+	#nothing
+
+.PHONY:	all etags tags depend clean showtrex showrank new newtest mod
+
+EXECUTABLES= ${BIN}/${EXG}
+all:	${BIN} ${MAKEFILENAME} ${EXGMAKEFILENAME} ${EXECUTABLES} ${LIBRANK}
+
+${BIN}:
+	mkdir ${BIN}
+
+###############################################################################
+${BIN}/${EXG}: $(EXGOBJS)
+	$(LD) -lpthread -o $@  $^ $(LIBS)
+###############################################################################
+
+etags:
+	svn info *.[chlyCH]* 2> /dev/null| awk '/^Path:/{print $$2}' | xargs etags
+
+tags:
+		find . -name "*.[ch]*" -print | etags -
+
+depend:
+	makedepend -- $(CFLAGS) -- -Y $(ALLSRCS)
+
+${BIN}/${EXG}_lex.cc:	${SRC}/${EXG}.l ${BIN}/${EXG}_parse.hh ${SRC}/${EXG}_defs.h
+${BIN}/${EXG}_parse.cc:	${SRC}/${EXG}.y  ${SRC}/${EXG}_defs.h
+
+
+clean:
+		@rm -f 	${EXECUTABLES} ${EXGOBJS} \
+		       	${BIN}/${YACCFILE:.y=_parse.cc} \
+			${BIN}/${YACCFILE:.y=_parse.hh} \
+			${BIN}/${YACCFILE:.y=_parse.output} \
+			${BIN}/${LEXFILE:.l=_lex.cc}
+
+new:
+	make -f ${EXGMAKEFILENAME} clean; make -f ${EXGMAKEFILENAME} -j10
+
+###############################################################################
+# debugging stuff:
+###############################################################################
+newtest:
+	make -f ${MAKEFILENAME} clean; make -f ${MAKEFILENAME} -j10; ./run_tests.sh
+

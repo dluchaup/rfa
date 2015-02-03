@@ -26,3 +26,13 @@ Examples:
 	lib/test/fa_rank/src/fa_rank_tests.cc
           shows how ranking based on is done
 	lib/test/fa_rank/scripts/fa_rank_tests.sh test script for fa_rank_tests
+
+        examples/cfg
+           this directory contains several examples of ranking/unranking using
+           CFG grammars, including the examples used in
+(1) Daniel Luchaup, Thomas Shrimpton, Thomas Ristenpart, Somesh Jha
+    "Formatted Encryption beyond Regular Languages"
+    21st ACM Conference on Computer and Communications Security (ACM CCS 2014)
+            See end of examples/cfg/README for more info.
+
+

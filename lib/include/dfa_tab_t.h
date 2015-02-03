@@ -28,7 +28,6 @@ typedef uint state_id_t;
 const state_id_t illegal_state = (state_id_t)(-1);
 
 #define ARR(arr, state, chr) ((arr)[((state)<<8) + (chr)]) // state*MAX_SYMS
-#define ARR2(arr, state, chr2) ((arr)[((state)<<(8*2)) + (chr2)])
 #define ACCEPT_PTR_HACK (new int[1])//((int*)0x1)
 
 struct dfa_tab_t {
@@ -36,42 +35,37 @@ struct dfa_tab_t {
    * just a boolean "yes" or "no" */
   state_id_t *tab;
   int ** acc;
-  int  *sink;//=1=accept; 2=reject; 0 = none
-  state_id_t reject_state;
   unsigned int machine_id;
   unsigned int num_states;
   state_id_t start;
   std::string filename;
-  /* In fact for postfix closed regular expressions, there should be only
-  ** one accepting state!
-  */
-  state_id_t accepting_state;
   unsigned long long *stat;
   ////////
+#define FEEDBEEF 1//0xFEEDBEEF
   void clear() {
     //bzero((char *) this, sizeof(*this));
     tab = NULL;
     acc = NULL;
-    sink = NULL;
     machine_id = 0xbadbeef;
     num_states = 0;
     start = 0;
-    reject_state = illegal_state;
   }
   dfa_tab_t() { clear(); }
   dfa_tab_t(const char* rex) { clear(); init(rex); }
-  dfa_tab_t(const std::string& rex) { clear(); init(rex.c_str()); }
+  dfa_tab_t(const std::string& rex, unsigned int id = FEEDBEEF)
+    { clear(); init(rex.c_str(), id); }
   ~dfa_tab_t() {cleanup();}// TBD: Check if this is compatible with old uses of dfa_tab_t!
 
-  bool DFAload(const char *filename);
-  bool DFAload(const std::string& filename) {return DFAload(filename.c_str());}
-  bool dump(const char *filename);
-  bool HACK_dfa_dump(const char *filename);
+  bool txt_dfa_load(const char *filename);
+  bool txt_dfa_load(const std::string& filename)
+    { return txt_dfa_load(filename.c_str()); }
+  bool bin_dfa_dump(const char *filename);
+  bool txt_dfa_dump(const char *filename);//ex HACK_dfa_dump
   
-  void init(const char *rex);
+  void init(const char *rex, unsigned int id = FEEDBEEF);
   void dfa2nfa2dotty(const char *filename);
   
-  bool load(const char *filename);
+  bool bin_dfa_load(const char *filename);
   
   void cleanup(void);
   void partial_cleanup_for_resize(state_id_t lim);
@@ -88,9 +82,16 @@ struct dfa_tab_t {
 //#define STATS
 };
 
+#define dbgCheck(dt)      /* enable function if needed */
+
+/* dump 'dt' to filename according to kind: "bin" or "txt" */
+bool dfa_dump(const dfa_tab_t *dt, const char *filename, const char *kind);
+
+
 /* Get a new DFA which accepts the union of dt1 and dt2's languages        */
 dfa_tab_t* dt_union       (const dfa_tab_t* dt1, const dfa_tab_t* dt2,
-			   unsigned int max_states=UINT_MAX);
+			   unsigned int max_states=UINT_MAX,
+			   bool minimize = true);
 /* Get a new DFA which accepts the intersection of dt1 and dt2's languages */
 dfa_tab_t* dt_intersection(const dfa_tab_t* dt1, const dfa_tab_t* dt2,
 			   unsigned int max_states=UINT_MAX);  
@@ -109,4 +110,19 @@ dfa_tab_t* dt_complement  (const dfa_tab_t* dt);
 void dt_negate  (dfa_tab_t* dt);
 
 extern bool minimMDFA;
+
+/*****************************************************************************/
+/***  stuff for generic programming                                        ***/
+/*****************************************************************************/
+inline state_id_t transition(state_id_t src, const dfa_tab_t* dt , unsigned int sym) {
+  state_id_t dst = ARR(dt->tab, src, sym);
+  return dst;
+}
+inline state_id_t num_states(const dfa_tab_t* dt) {
+  return dt->num_states;
+}
+extern bool equalDfa(const dfa_tab_t * dfa1, const dfa_tab_t* dfa2);
+extern int* clone_accept_ids(int* acc);
+extern void guarded_minimize(dfa_tab_t * &dt, state_id_t &lastMinNumberOfStates);
+
 #endif

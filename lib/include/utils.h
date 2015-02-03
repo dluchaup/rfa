@@ -26,5 +26,7 @@
 extern void chomp(std::string &str);
 extern void chomp(char *str);
 
+extern void pin_processors();
+
 
 #endif

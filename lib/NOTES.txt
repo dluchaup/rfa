@@ -1,0 +1,26 @@
+June 5
+ - TBD:keep: test changes
+ - TBD:try to keep: trex visitor
+-------------------------------------------------------------------------------
+apr 27:
+I changed return types 'MPInt' to 'const MPInt&', and instead of a
+speedup, it seems it is slower:
+ time bin/exG  -zforced_len:1000| grep init
+old times:77.5604, 78.0787, 76.963 s
+new times: 79.1842, 79.094, 80.9708 s
+
+TBD: why???
+-------------------------------------------------------------------------------
+
+TBD:
+(1) see apr 27 note
+[2] [DONE:] Change the size of c_num_matches from children.size()
+to children.size() -1
+(3) Change some of the MPInt rank(...), i.e. those used internally, to
+    rank(..., MPInt &)
+(4) check if memoization helps for #preceding rules, etc in ::rank
+(5) June 24: add tests for rex-intersect
+
+TAG:
+- fa-orig
+- git checkout -b refactoring
