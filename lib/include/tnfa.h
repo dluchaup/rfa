@@ -128,7 +128,7 @@ public:
   parseTree(trex* type0) :
     flat(""), flat_length(0),
     _type(type0), rule_index(0) { assert(_type); };
-  ~parseTree() {
+  virtual ~parseTree() {
     for (std::vector<parseTree*>::iterator it = children.begin();
 	 it != children.end(); ++it)
       delete *it;

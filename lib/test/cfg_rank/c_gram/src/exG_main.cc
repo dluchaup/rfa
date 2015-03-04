@@ -33,7 +33,7 @@ void test_gram() {
     MyTime tm_init_G("init_G("+toString(forced_len)+")");
     MemoryInfo mi;
     mi.read();  mi.dump("memory-before-init_G"); std::cout << std::endl;
-    g_exG = new exG(forced_len);
+    g_exG = new exG(forced_len, forced_len);
     mi.read();  mi.dump("memory-after-init_G"); std::cout << std::endl;
     std::cout << "\n-------------- done init --------------\n";
   }
