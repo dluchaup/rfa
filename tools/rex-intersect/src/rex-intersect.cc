@@ -88,12 +88,10 @@ static bool do_intersect(vector<string> &regular_expressions) {
       if (pdt_intersect->num_states == 0)
 	break;
     }
-    //DMP(pdt_intersect->num_states); DMPNL(rex);
   }
   bool result = (pdt_intersect && pdt_intersect->num_states != 0);
   if (pdt_intersect)
     delete pdt_intersect;
-  //DMPC(regular_expressions); DMPNL(result);
   return result;
 }
 
