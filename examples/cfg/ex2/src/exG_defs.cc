@@ -17,6 +17,8 @@
 
 /* This is grammar G:
  * *** grammar rules ***
+ * r00: L -> S
+ * r01: L -> S L
  * r0: S  -> ( Exp )
  * r1: S  -> ( Exp + S)
  * r2: Exp -> IDENTIFIER
@@ -50,8 +52,9 @@ void exG::init_G() {
   G.terminals.push_back(rp);
   G.terminals.push_back(plus);
     
-  G.nonterminals.push_back(L); G.index_start = 0;
-  G.nonterminals.push_back(S); //G.index_start = 0;
+  G.nonterminals.push_back(L);
+  G.set_S(L); //set the start symbol
+  G.nonterminals.push_back(S);
   G.nonterminals.push_back(Exp);
   G.nonterminals.push_back(Num);
   G.nonterminals.push_back(IDENTIFIER);

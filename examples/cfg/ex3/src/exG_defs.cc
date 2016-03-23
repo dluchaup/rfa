@@ -36,7 +36,8 @@ void init_G() {
   /*** Here is how to build a representation, G, for the above grammar ***/  
   L = new Nonterminal("L");
   T = new Nonterminal("R");
-  G.nonterminals.push_back(L); G.index_start = 0;
+  G.nonterminals.push_back(L);
+  G.set_S(L); //set the start symbol
   G.nonterminals.push_back(T);
   
   r0 = new GRule(L, "r0");

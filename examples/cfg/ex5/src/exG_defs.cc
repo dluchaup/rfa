@@ -50,7 +50,8 @@ void init_G() {
   L = new Nonterminal("L");
   T = new Nonterminal("T");
   F = new Nonterminal("F");
-  G.nonterminals.push_back(L); G.index_start = 0;
+  G.nonterminals.push_back(L);
+  G.set_S(L); //set the start symbol
   G.nonterminals.push_back(T);
   G.nonterminals.push_back(F);
 
