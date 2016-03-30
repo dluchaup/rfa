@@ -298,6 +298,74 @@ public:
     return res;
   }
 };
+/********** L1Rule *******************************/
+/* Lexical rule of the form
+ * r2: A -> str , where str is a string
+ * Similar to LRule, but used to count the number of *words* not bytes.
+ * That is, each token is condidered of length 1.
+ */
+class L1Rule : public Rule {
+  const std::string keyword;
+  protected:
+public:
+  L1Rule(Nonterminal *l,
+	 const char* keyword0,
+	 const char* rname0)
+    : Rule(l, rname0), keyword(std::string(keyword0))
+    {};
+  virtual ~L1Rule() {}
+  virtual MPInt rank(const ParseTree* ) const {
+    MPInt res = 0;
+    return res;
+  }
+  virtual ParseTree* unrank(MPInt& rnk, unsigned int len) const {//TBD:perf
+    std::string yield = keyword;
+    assert(len == 1);
+    assert(rnk == MPInt_zero);
+    LParseTree *lpt = new LParseTree(this, byte_copy(yield.c_str(),yield.length()), yield.length());
+    return lpt;
+  }
+
+  const MPInt& num_matches(unsigned int len) const {
+    if (len != 1)
+      return MPInt_zero;
+    else
+      return MPInt_one;
+  }
+  virtual const MPInt& memoize_num_matches(unsigned int len, unsigned int ) {
+    return num_matches(len);
+  }
+  
+  void memoize(unsigned int len, unsigned int max_len) {
+    assert(len <= max_len);
+  }
+  /********** LParseTree **************************/
+  class LParseTree : public ParseTree {
+    public:
+    const L1Rule *lr;//TBD: this is the same as this->r. Unpleasant...
+    const char *yield;
+    unsigned int yield_string_length;
+    LParseTree(const L1Rule *r0, const char* yield0, unsigned int yield_length0)
+      : ParseTree(r0),
+      yield(yield0), yield_string_length(yield_length0) {
+      //std::cout << "L1Rule::LParseTree::LParseTree's yield=" << yield << std::endl;;
+      //std::cout << "L1Rule::LParseTree::LParseTree's yield_string_length=" << yield_string_length << std::endl;;
+      yield_length=1;
+    }
+    LParseTree(const L1Rule *r0)
+      : ParseTree(r0), lr(r0), yield(NULL) {}
+    virtual ~LParseTree() {
+      if (yield)
+	free(const_cast<char*>(yield)); //malloc-ed from lexer
+    }
+    std::string flatten() const;
+    void accept(class ParseTreePrePostVisitor *visitor) const;
+  };
+  /****************** debugging ********************/
+  std::string toString() const {
+    return keyword;
+  }
+};
 #endif
 
 /********** Visitor *****************************/
@@ -307,10 +375,12 @@ class ParseTreePrePostVisitor {
   virtual void pre_visit(const Terminal *t) = 0;
   virtual void pre_visit(const GRule::GParseTree *pt) = 0;
   virtual void pre_visit(const LRule::LParseTree *pt) = 0;
+  virtual void pre_visit(const L1Rule::LParseTree *pt) = 0;
   /*post-order*/
   virtual void post_visit(const Terminal *t) = 0;
   virtual void post_visit(const GRule::GParseTree *pt) = 0;
   virtual void post_visit(const LRule::LParseTree *pt) = 0;
+  virtual void post_visit(const L1Rule::LParseTree *pt) = 0;
 };
 /********** Grammar *****************************/
 class Grammar {
@@ -379,6 +449,9 @@ class PTDerivateVisitor : public ParseTreePrePostVisitor {
   virtual void pre_visit(const LRule::LParseTree *pt) {
     result = result + "[" + pt->r->name + "]";
   }
+  virtual void pre_visit(const L1Rule::LParseTree *pt) {
+    result = result + "[" + pt->r->name + "]";
+  }
   /*post-order*/
   virtual void post_visit(const Terminal *) {}
   
@@ -386,6 +459,7 @@ class PTDerivateVisitor : public ParseTreePrePostVisitor {
     result = result + "]";
   }
   virtual void post_visit(const LRule::LParseTree *) {}
+  virtual void post_visit(const L1Rule::LParseTree *) {}
 
   std::string derivation(ParseTree* pt) {
     pt->accept(this);
@@ -401,10 +475,12 @@ public:
   virtual void pre_visit(const Terminal *) {};
   virtual void pre_visit(const GRule::GParseTree *) {}
   virtual void pre_visit(const LRule::LParseTree *) {}
+  virtual void pre_visit(const L1Rule::LParseTree *) {}
   /*post-order*/
   virtual void post_visit(const Terminal *t);
   virtual void post_visit(const GRule::GParseTree *pt);
   virtual void post_visit(const LRule::LParseTree *pt);
+  virtual void post_visit(const L1Rule::LParseTree *pt);
 
 public:
   PTYieldVisitor(const char* sep=" ") : separator(sep) {}

@@ -354,8 +354,18 @@ void GRule::GParseTree::accept(class ParseTreePrePostVisitor *visitor) const {
 std::string LRule::LParseTree::flatten() const {
   return std::string(yield, yield_length);
 }
+std::string L1Rule::LParseTree::flatten() const {
+  //std::cout << "L1Rule::LParseTree::flatten's yield=" << yield << std::endl;;
+  std::string res = std::string(yield, yield_string_length);
+  //std::cout << "L1Rule::LParseTree::flatten's res=" << res << std::endl;;
+  return res;
+}
 
 void LRule::LParseTree::accept(class ParseTreePrePostVisitor *visitor) const {
+  visitor->pre_visit(this);
+  visitor->post_visit(this);
+}
+void L1Rule::LParseTree::accept(class ParseTreePrePostVisitor *visitor) const {
   visitor->pre_visit(this);
   visitor->post_visit(this);
 }
@@ -397,4 +407,7 @@ void PTYieldVisitor::post_visit(const GRule::GParseTree *pt) {
 
 void PTYieldVisitor::post_visit(const LRule::LParseTree *pt) {
   stk.push(std::string(pt->yield, pt->yield_length));
+}
+void PTYieldVisitor::post_visit(const L1Rule::LParseTree *pt) {
+  stk.push(std::string(pt->yield, pt->yield_string_length));
 }
